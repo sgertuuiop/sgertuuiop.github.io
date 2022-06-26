@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.cfore {
+  color: #000000; }
+
+.cback {
+  color: #ffffff; }
+
+.cgrey {
+  color: #444444; }
+
+.cxred {
+  color: #bc3e31; }
+
+.corag {
+  color: #d43900; }
+
+.cyelo {
+  color: #8d6708; }
+
+.cgren {
+  color: #18824c; }
+
+.cblue {
+  color: #2a7ab0; }
+
+.cprpl {
+  color: #8e44ad; }
+
+.cdbld {
+  color: #aaaaaa; }
+
+body {
+  padding: 10px;
+  text-align: center;
+  font-family: 'Space Grotesk', sans-serif; }
+
+.wraps {
+  max-width: 800px;
+  margin: auto; }
+
+.lists {
+  max-width: 500px;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word; }
+
+footer {
+  margin-top: 2%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  width: 100%; }
+
+a {
+  color: #2a7ab0; }
+
+code {
+  font-family: 'Space Mono', monospace; }
+
+.sfont {
+  font-weight: 500; }
+
+.monos {
+  font-family: 'Space Mono', monospace; }
+
+.sname {
+  color: black;
+  font-size: 32pt; }
+
+.mname {
+  font-size: 48pt; }
+
+.pttle {
+  font-size: 24pt; }
+
+.shead {
+  font-size: 18pt; }
+
+.fnote {
+  font-size: small; }
+
+.butts {
+  background-color: #ffffff;
+  font-size: 20px;
+  border: 2px solid #000000;
+  padding: 15px 0px;
+  margin: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 250px;
+  border-radius: 8px;
+  transition-duration: 0.3s; }
+
+.butts:hover {
+  background-color: #000000;
+  color: #ffffff; }
+
+.disab {
+  color: #aaaaaa;
+  border: 2px solid #aaaaaa; }
+
+.disab:hover {
+  background-color: #ffffff;
+  color: #aaaaaa; }
+
+@media (prefers-color-scheme: dark) {
+  .cfore {
+    color: #ffffff; }
+
+  .cback {
+    color: #000000; }
+
+  .cgrey {
+    color: #aaaaaa; }
+
+  .cxred {
+    color: #ff6347; }
+
+  .corag {
+    color: #f89406; }
+
+  .cyelo {
+    color: #f4d03f; }
+
+  .cgren {
+    color: #4add8c; }
+
+  .cblue {
+    color: #00bfff; }
+
+  .cprpl {
+    color: #b890d4; }
+
+  .cdbld {
+    color: #444444; }
+
+  body {
+    background-color: #000000;
+    color: #ffffff; }
+
+  a {
+    color: #00bfff; }
+
+  .sname {
+    color: #ffffff; }
+
+  .ccbut {
+    filter: invert(1); }
+
+  .butts {
+    background-color: #000000;
+    border: 2px solid #ffffff; }
+
+  .butts:hover {
+    background-color: #ffffff;
+    color: #000000; }
+
+  .disab {
+    color: #444444;
+    border: 2px solid #444444; }
+
+  .disab:hover {
+    background-color: #000000;
+    color: #444444; } }
+
+/*# sourceMappingURL=main.css.map */

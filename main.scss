@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$lbg: #ffffff;
+$lfg: #000000;
+$lgrey: #444444;
+$lred: #bc3e31;
+$lorange: #d43900;
+$lyellow: #8d6708;
+$lgreen: #18824c;
+$lblue: #2a7ab0;
+$lpurple: #8e44ad;
+$ldisabled: #aaaaaa;
+
+$dbg: #000000;
+$dfg: #ffffff;
+$dgrey: #aaaaaa;
+$dred: #ff6347;
+$dorange: #f89406;
+$dyellow: #f4d03f;
+$dgreen: #4add8c;
+$dblue: #00bfff;
+$dpurple: #b890d4;
+$ddisabled: #444444;
+
+.cfore { color: $lfg; }
+.cback { color: $lbg; }
+.cgrey { color: $lgrey; }
+.cxred { color: $lred; }
+.corag { color: $lorange; }
+.cyelo { color: $lyellow; }
+.cgren { color: $lgreen; }
+.cblue { color: $lblue; }
+.cprpl { color: $lpurple; }
+.cdbld { color: $ldisabled; }
+
+body {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.wraps {
+    max-width: 800px;
+    margin: auto;
+}
+
+.lists {
+    max-width: 500px;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+footer {
+    margin-top: 2%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+a {
+    color: $lblue;
+}
+
+code {
+    font-family: 'Space Mono', monospace;
+}
+
+.sfont {
+    font-weight: 500;
+}
+
+.monos {
+    font-family: 'Space Mono', monospace;
+}
+
+.sname {
+    color: black;
+    font-size: 32pt;
+}
+
+.mname {
+    font-size: 48pt;
+}
+
+.pttle {
+    font-size: 24pt;
+}
+
+.shead {
+    font-size: 18pt;
+}
+
+.fnote {
+    font-size: small;
+}
+
+.butts {
+    background-color: $lbg;
+    font-size: 20px;
+    border: 2px solid $lfg;
+    padding: 15px 0px;
+    margin: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 250px;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
+
+.butts:hover {
+    background-color: $lfg;
+    color: $lbg;
+}
+
+.disab {
+    color: $ldisabled;
+    border: 2px solid $ldisabled;
+}
+
+.disab:hover {
+    background-color: $lbg;
+    color: $ldisabled;
+}
+
+@media (prefers-color-scheme: dark) {
+    .cfore { color: $dfg; }
+    .cback { color: $dbg; }
+    .cgrey { color: $dgrey; }
+    .cxred { color: $dred; }
+    .corag { color: $dorange; }
+    .cyelo { color: $dyellow; }
+    .cgren { color: $dgreen; }
+    .cblue { color: $dblue; }
+    .cprpl { color: $dpurple; }
+    .cdbld { color: $ddisabled; }
+
+    body {
+        background-color: $dbg;
+        color: $dfg;
+    }
+    
+    a {
+        color: $dblue;
+    }
+
+    .sname {
+        color: $dfg;
+    }
+
+    .ccbut {
+        filter: invert(1);
+    }
+
+
+    .butts {
+        background-color: $dbg;
+        border: 2px solid $dfg;
+    }
+
+    .butts:hover {
+        background-color: $dfg;
+        color: $dbg;
+    }
+
+    .disab {
+        color: $ddisabled;
+        border: 2px solid $ddisabled;
+    }
+    
+    .disab:hover {
+        background-color: $dbg;
+        color: $ddisabled;
+    }
+}
