@@ -79,11 +79,10 @@ code {
   font-size: small; }
 
 .butts {
-  background-color: #ffffff;
-  font-size: 20px;
-  border: 2px solid #000000;
-  padding: 15px 0px;
-  margin: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 5px;
+  margin: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -92,8 +91,16 @@ code {
   transition-duration: 0.3s; }
 
 .butts:hover {
+  background-color: #ffffff;
+  color: #000000; }
+
+.bimpo {
+  background-color: #f4d03f;
+  color: #000000; }
+
+.bimpo:hover {
   background-color: #000000;
-  color: #ffffff; }
+  color: #f4d03f; }
 
 .disab {
   color: #aaaaaa;
@@ -148,19 +155,28 @@ code {
     filter: invert(1); }
 
   .butts {
-    background-color: #000000;
-    border: 2px solid #ffffff; }
-
-  .butts:hover {
     background-color: #ffffff;
     color: #000000; }
 
+  .butts:hover {
+    background-color: #000000;
+    color: #ffffff; }
+
+  .bimpo {
+    background-color: #f4d03f;
+    color: #000000; }
+
+  .bimpo:hover {
+    background-color: #000000;
+    color: #f4d03f; }
+
   .disab {
-    color: #444444;
+    background-color: #444444;
+    color: #000000;
     border: 2px solid #444444; }
 
   .disab:hover {
-    background-color: #000000;
-    color: #444444; } }
+    background-color: #444444;
+    color: #000000; } }
 
 /*# sourceMappingURL=main.css.map */

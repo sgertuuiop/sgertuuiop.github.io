@@ -96,11 +96,10 @@ code {
 }
 
 .butts {
-    background-color: $lbg;
-    font-size: 20px;
-    border: 2px solid $lfg;
-    padding: 15px 0px;
-    margin: 25px;
+    background-color: $lfg;
+    color: $lbg;
+    padding: 10px 5px;
+    margin: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -110,8 +109,18 @@ code {
 }
 
 .butts:hover {
-    background-color: $lfg;
-    color: $lbg;
+    background-color: $lbg;
+    color: $lfg;
+}
+
+.bimpo {
+    background-color: $dyellow;
+    color: $dbg;
+}
+
+.bimpo:hover {
+    background-color: $dbg;
+    color: $dyellow;
 }
 
 .disab {
@@ -155,22 +164,33 @@ code {
 
 
     .butts {
-        background-color: $dbg;
-        border: 2px solid $dfg;
-    }
-
-    .butts:hover {
         background-color: $dfg;
         color: $dbg;
     }
 
+    .butts:hover {
+        background-color: $dbg;
+        color: $dfg;
+    }
+
+    .bimpo {
+        background-color: $dyellow;
+        color: $dbg;
+    }
+    
+    .bimpo:hover {
+        background-color: $dbg;
+        color: $dyellow;
+    }
+
     .disab {
-        color: $ddisabled;
+        background-color: $ddisabled;
+        color: $dbg;
         border: 2px solid $ddisabled;
     }
     
     .disab:hover {
-        background-color: $dbg;
-        color: $ddisabled;
+        background-color: $ddisabled;
+        color: $dbg;
     }
 }
