@@ -1,6 +1,6 @@
-# Krisje on the Web
+# my website
  [![License: CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-This is my website. Expect nothing!
+this is my website. expect nothing!
 
-[Go there!](https://sgertuuiop.github.io)
+[go there!](https://sgertuuiop.github.io)
