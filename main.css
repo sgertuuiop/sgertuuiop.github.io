@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 .cfore {
   color: #000000;
 }
 
 .cback {
-  color: #ffffff;
+  color: #e0f6ff;
 }
 
 .cgrey {
@@ -40,9 +40,10 @@
 }
 
 body {
-  padding: 10px;
-  text-align: center;
-  font-family: "Space Grotesk", sans-serif;
+  background-color: #e0f6ff;
+  color: #000000;
+  padding: 25px;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .wraps {
@@ -51,7 +52,6 @@ body {
 }
 
 .lists {
-  max-width: 500px;
   margin: auto;
   text-align: justify;
   text-justify: inter-word;
@@ -69,24 +69,17 @@ a {
 }
 
 code {
-  font-family: "Space Mono", monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .sfont {
-  font-weight: 500;
-}
-
-.monos {
-  font-family: "Space Mono", monospace;
+  font-style: italic;
+  font-weight: 700;
 }
 
 .sname {
   color: black;
   font-size: 32pt;
-}
-
-.mname {
-  font-size: 48pt;
 }
 
 .pttle {
@@ -103,111 +96,20 @@ code {
 
 .butts {
   background-color: #000000;
-  color: #ffffff;
-  padding: 10px 5px;
-  margin: 20px;
-  text-align: center;
+  color: #e0f6ff;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
-  width: 250px;
-  border-radius: 8px;
+  width: calc(100% - 20px);
+  border-radius: 5px;
   transition-duration: 0.3s;
 }
 
 .butts:hover {
-  background-color: #ffffff;
+  background-color: #e0f6ff;
   color: #000000;
-}
-
-.bimpo {
-  background-color: #000000;
-  color: #f4d03f;
-}
-
-.bimpo:hover {
-  background-color: #f4d03f;
-  color: #000000;
-}
-
-.disab {
-  color: #aaaaaa;
-  border: 2px solid #aaaaaa;
-}
-
-.disab:hover {
-  background-color: #ffffff;
-  color: #aaaaaa;
-}
-
-@media (prefers-color-scheme: dark) {
-  .cfore {
-    color: #ffffff;
-  }
-  .cback {
-    color: #000000;
-  }
-  .cgrey {
-    color: #aaaaaa;
-  }
-  .cxred {
-    color: #ff6347;
-  }
-  .corag {
-    color: #f89406;
-  }
-  .cyelo {
-    color: #f4d03f;
-  }
-  .cgren {
-    color: #4add8c;
-  }
-  .cblue {
-    color: #00bfff;
-  }
-  .cprpl {
-    color: #b890d4;
-  }
-  .cdbld {
-    color: #444444;
-  }
-  body {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  a {
-    color: #00bfff;
-  }
-  .sname {
-    color: #ffffff;
-  }
-  .ccbut {
-    filter: invert(1);
-  }
-  .butts {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  .butts:hover {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  .bimpo {
-    background-color: #f4d03f;
-    color: #000000;
-  }
-  .bimpo:hover {
-    background-color: #000000;
-    color: #f4d03f;
-  }
-  .disab {
-    background-color: #444444;
-    color: #000000;
-    border: 2px solid #444444;
-  }
-  .disab:hover {
-    background-color: #444444;
-    color: #000000;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
