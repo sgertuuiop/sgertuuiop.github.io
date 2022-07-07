@@ -1,49 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .cfore {
-  color: #000000;
+  color: #ffffff;
 }
 
 .cback {
-  color: #e0f6ff;
+  color: #000000;
 }
 
 .cgrey {
-  color: #444444;
-}
-
-.cxred {
-  color: #bc3e31;
-}
-
-.corag {
-  color: #d43900;
-}
-
-.cyelo {
-  color: #8d6708;
-}
-
-.cgren {
-  color: #18824c;
-}
-
-.cblue {
-  color: #2a7ab0;
-}
-
-.cprpl {
-  color: #8e44ad;
-}
-
-.cdbld {
   color: #aaaaaa;
 }
 
+.cxred {
+  color: #ff6347;
+}
+
+.corag {
+  color: #f89406;
+}
+
+.cyelo {
+  color: #f4d03f;
+}
+
+.cgren {
+  color: #4add8c;
+}
+
+.cblue {
+  color: #00bfff;
+}
+
+.cprpl {
+  color: #b890d4;
+}
+
+.cdbld {
+  color: #444444;
+}
+
 body {
-  background-color: #e0f6ff;
-  color: #000000;
+  background-color: #000000;
+  background-image: url(/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
   padding: 25px;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Crimson Pro", serif;
 }
 
 .wraps {
@@ -65,21 +69,21 @@ footer {
 }
 
 a {
-  color: #2a7ab0;
+  color: #ffffff;
 }
 
 code {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Crimson Pro", serif;
 }
 
 .sfont {
   font-style: italic;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .sname {
-  color: black;
   font-size: 32pt;
+  font-weight: 400;
 }
 
 .pttle {
@@ -94,9 +98,37 @@ code {
   font-size: small;
 }
 
+.ccbut {
+  filter: invert(1);
+}
+
 .butts {
-  background-color: #000000;
-  color: #e0f6ff;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  color: #ffffff;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+
+.butts:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  color: #000000;
+}
+
+.highcontrast {
+  background-image: none;
+}
+
+.highcontrast .butts {
+  background-color: #ffffff;
+  color: #000000;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -107,9 +139,9 @@ code {
   transition-duration: 0.3s;
 }
 
-.butts:hover {
-  background-color: #e0f6ff;
-  color: #000000;
+.highcontrast .butts:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$bg: #e0f6ff;
-$fg: #000000;
-$grey: #444444;
-$red: #bc3e31;
-$orange: #d43900;
-$yellow: #8d6708;
-$green: #18824c;
-$blue: #2a7ab0;
-$purple: #8e44ad;
-$disabled: #aaaaaa;
+$bg: #000000;
+$fg: #ffffff;
+$grey: #aaaaaa;
+$red: #ff6347;
+$orange: #f89406;
+$yellow: #f4d03f;
+$green: #4add8c;
+$blue: #00bfff;
+$purple: #b890d4;
+$disabled: #444444;
 
-$fonts: 'JetBrains Mono', monospace;
+$fonts: 'Crimson Pro', serif;
 
 .cfore { color: $fg; }
 .cback { color: $bg; }
@@ -26,6 +26,10 @@ $fonts: 'JetBrains Mono', monospace;
 
 body {
     background-color: $bg;
+    background-image: url(/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     color: $fg;
     padding: 25px;
     font-family: $fonts;
@@ -50,7 +54,7 @@ footer {
 }
 
 a {
-    color: $blue;
+    color: $fg;
 }
 
 code {
@@ -59,12 +63,12 @@ code {
 
 .sfont {
     font-style: italic;
-    font-weight: 700;
+    font-weight: 300;
 }
 
 .sname {
-    color: black;
     font-size: 32pt;
+    font-weight: 400;
 }
 
 .pttle {
@@ -79,7 +83,35 @@ code {
     font-size: small;
 }
 
+.ccbut {
+    filter: invert(1);
+}
+
 .butts {
+    background-color: rgb(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    color: $fg;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.butts:hover {
+    background-color: rgb(255, 255, 255, 0.50);
+    backdrop-filter: blur(15px);
+    color: $bg;
+}
+
+.highcontrast {
+    background-image: none;
+}
+  
+.highcontrast .butts {
     background-color: $fg;
     color: $bg;
     padding: 10px;
@@ -91,8 +123,8 @@ code {
     border-radius: 5px;
     transition-duration: 0.3s;
 }
-
-.butts:hover {
+  
+.highcontrast .butts:hover {
     background-color: $bg;
     color: $fg;
 }
