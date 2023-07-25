@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Head from "next/head";
+import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -15,11 +16,8 @@ const Layout: FC<props> = ({ title, description, children }) => {
       <Head>
         <title>{title} « Christian Rodríguez</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        />
         <link rel="icon" href="/assets/favicon.png" />
+
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta property="og:title" content={title + " « Christian Rodríguez"} />
@@ -41,6 +39,7 @@ const Layout: FC<props> = ({ title, description, children }) => {
         />
       </Head>
       <main>
+        <Script src="https://kit.fontawesome.com/00db056957.js" />
         <Header title={title} />
         {children}
         <Footer />
