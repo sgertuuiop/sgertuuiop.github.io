@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Button from "../components/Button";
+import HomeButton from "../components/HomeButton";
 
 export default function Http404() {
   return (
@@ -9,7 +9,7 @@ export default function Http404() {
         description="The requested resource could not be found."
       >
         <p>The requested resource could not be found.</p>
-        <Button href="/" title="Go home" />
+        <HomeButton />
       </Layout>
     </>
   );

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 
 $bg: #f5ebe0;
+$bg2: #e2e1de;
 $accent: #006064;
 $fg: #252423;
 $grey: #aaaaaa;
@@ -14,34 +15,34 @@ $disabled: #444444;
 
 $fonts: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
 
-.c-foreground {
+.cr-foreground {
   color: $fg;
 }
-.c-background {
+.cr-background {
   color: $bg;
 }
-.c-grey {
+.cr-grey {
   color: $grey;
 }
-.c-red {
+.cr-red {
   color: $red;
 }
-.c-orange {
+.cr-orange {
   color: $orange;
 }
-.c-yellow {
+.cr-yellow {
   color: $yellow;
 }
-.c-green {
+.cr-green {
   color: $green;
 }
-.c-blue {
+.cr-blue {
   color: $blue;
 }
-.c-purple {
+.cr-purple {
   color: $purple;
 }
-.c-disabled {
+.cr-disabled {
   color: $disabled;
 }
 
@@ -51,6 +52,16 @@ body {
   padding: 25px;
   font-family: $fonts;
   font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-style: italic;
 }
 
 .cr-wrapper {
@@ -64,7 +75,7 @@ body {
   text-justify: inter-word;
 }
 
-footer {
+.cr-footer {
   color: $fg;
   padding: 15px;
   padding-top: 20px;
@@ -82,7 +93,10 @@ a {
 }
 
 code {
-  font-family: $fonts;
+  font-family: monospace;
+  background: $bg2;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 hr {
@@ -104,11 +118,15 @@ hr {
   font-size: medium;
 }
 
+.cr-cc-icon {
+  font-size: x-large;
+}
+
 .cr-cc-icon:hover {
   cursor: default;
 }
 
-.cr-cc-icon img:hover {
+.cr-cc-icon i:hover {
   cursor: help;
 }
 

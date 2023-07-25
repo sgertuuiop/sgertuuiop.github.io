@@ -12,7 +12,7 @@ const Button: FC<props> = ({ href, title }) => {
       <Link className="cr-button" href={href}>
         {title}
         <div className="cr-button-icon">
-          <i className="bi bi-arrow-right-square" />
+          <i className="fa fa-person-walking-arrow-right" />
         </div>
       </Link>
       <br />
