@@ -18,7 +18,7 @@ const Layout: FC<props> = ({ title, description, children }) => {
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        ></link>
+        />
         <link rel="icon" href="/assets/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
