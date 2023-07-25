@@ -1,1 +1,169 @@
-@import"https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap";.cfore{color:#252423}.cback{color:#f5ebe0}.cgrey{color:#aaa}.cxred{color:#b71c1c}.corag{color:#e65100}.cyelo{color:#f57f17}.cgren{color:#1b5e20}.cblue{color:#0d47a1}.cprpl{color:#311b92}.cdbld{color:#444}body{background-color:#f5ebe0;color:#252423;padding:25px;font-family:"Alegreya Sans","Helvetica Neue",Arial,sans-serif;font-size:large}.wraps{max-width:825px;margin:auto}.lists{margin:auto;text-align:justify;text-justify:inter-word}footer{color:#252423;padding:15px;padding-top:20px;padding-bottom:1px;margin-top:50px;margin-bottom:20px;text-decoration:none;display:inline-block;width:calc(100% - 30px);border-top:2px solid #252423}a{color:#252423}code{font-family:"Alegreya Sans","Helvetica Neue",Arial,sans-serif}hr{border:1px solid #252423}.sfont{color:#006064;font-weight:400;font-style:italic}.sname{font-size:32pt;font-weight:400}.fnote{font-size:medium}.ccbut:hover{cursor:default}.ccbut img:hover{cursor:help}.parag{color:#252423;margin-bottom:20px;display:inline-block;width:100%;text-align:justify}.butts{background-color:#252423;color:#f5ebe0;padding:15px;margin-top:20px;margin-bottom:20px;text-decoration:none;display:inline-block;width:calc(100% - 30px);transition-duration:.3s;border-radius:5px}.butts:hover{background-color:#006064}.bicon{float:right}.heads{color:#006064;width:calc(100% - 30px);font-size:xx-large}.hdimg{width:32px;height:32px}.plink{background-color:#006064;color:#252423;padding:0px 15px 0px 15px;margin-bottom:20px;display:inline-block;width:calc(100% - 30px);transition-duration:.3s}.plink:hover{background-color:#252423;color:#f5ebe0}.ntice{background:repeating-linear-gradient(-45deg, #f57f17, #f57f17 10px, #e65100 10px, #e65100 20px);color:#fff;padding:15px;margin-top:20px;margin-bottom:20px;display:inline-block;width:calc(100% - 30px);border-radius:5px;text-align:center}.hlink{text-decoration:none}/*# sourceMappingURL=globals.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+.c-foreground {
+  color: #252423;
+}
+
+.c-background {
+  color: #f5ebe0;
+}
+
+.c-grey {
+  color: #aaaaaa;
+}
+
+.c-red {
+  color: #b71c1c;
+}
+
+.c-orange {
+  color: #e65100;
+}
+
+.c-yellow {
+  color: #f57f17;
+}
+
+.c-green {
+  color: #1b5e20;
+}
+
+.c-blue {
+  color: #0d47a1;
+}
+
+.c-purple {
+  color: #311b92;
+}
+
+.c-disabled {
+  color: #444444;
+}
+
+body {
+  background-color: #f5ebe0;
+  color: #252423;
+  padding: 25px;
+  font-family: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: large;
+}
+
+.cr-wrapper {
+  max-width: 825px;
+  margin: auto;
+}
+
+.cr-list {
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer {
+  color: #252423;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-top: 2px solid #252423;
+}
+
+a {
+  color: #252423;
+}
+
+code {
+  font-family: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+hr {
+  border: 1px solid #252423;
+}
+
+.cr-highlight-font {
+  color: #006064;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cr-site-name {
+  font-size: 32pt;
+  font-weight: 400;
+}
+
+.cr-footnote {
+  font-size: medium;
+}
+
+.cr-cc-icon:hover {
+  cursor: default;
+}
+
+.cr-cc-icon img:hover {
+  cursor: help;
+}
+
+.cr-paragraph {
+  color: #252423;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+}
+
+.cr-button {
+  background-color: #252423;
+  color: #f5ebe0;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  transition-duration: 0.3s;
+  border-radius: 5px;
+}
+
+.cr-button:hover {
+  background-color: #006064;
+}
+
+.cr-button-icon {
+  float: right;
+}
+
+.cr-header {
+  color: #006064;
+  width: calc(100% - 30px);
+  font-size: xx-large;
+}
+
+.cr-header-image {
+  width: 32px;
+  height: 32px;
+}
+
+.cr-notice {
+  background: repeating-linear-gradient(-45deg, #f57f17, #f57f17 10px, #e65100 10px, #e65100 20px);
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cr-notice h2 {
+  font-weight: 400;
+}
+
+.cr-header-link {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=globals.css.map */
