@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Button from "../components/Button";
+import HomeButton from "../components/HomeButton";
 
 export default function Http418() {
   return (
@@ -12,7 +12,7 @@ export default function Http418() {
           This server refuses to brew coffee as it is permanently a teapot. The
           resulting entity body <em>may</em> be short and stout.
         </p>
-        <Button href="/" title="Go home" />
+        <HomeButton />
       </Layout>
     </>
   );
