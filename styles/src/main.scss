@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 
 $bg: #f5ebe0;
 $accent: #006064;
@@ -12,173 +12,171 @@ $blue: #0d47a1;
 $purple: #311b92;
 $disabled: #444444;
 
-$fonts: 'Alegreya Sans', 'Helvetica Neue', Arial, sans-serif;
+$fonts: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
 
-.cfore { color: $fg; }
-.cback { color: $bg; }
-.cgrey { color: $grey; }
-.cxred { color: $red; }
-.corag { color: $orange; }
-.cyelo { color: $yellow; }
-.cgren { color: $green; }
-.cblue { color: $blue; }
-.cprpl { color: $purple; }
-.cdbld { color: $disabled; }
+.c-foreground {
+  color: $fg;
+}
+.c-background {
+  color: $bg;
+}
+.c-grey {
+  color: $grey;
+}
+.c-red {
+  color: $red;
+}
+.c-orange {
+  color: $orange;
+}
+.c-yellow {
+  color: $yellow;
+}
+.c-green {
+  color: $green;
+}
+.c-blue {
+  color: $blue;
+}
+.c-purple {
+  color: $purple;
+}
+.c-disabled {
+  color: $disabled;
+}
 
 body {
-    background-color: $bg;
-    /* background: repeating-linear-gradient(
-        -45deg,
-        white,
-        white 10px,
-        $bg 10px,
-        $bg 20px
-    ); */
-    color: $fg;
-    padding: 25px;
-    font-family: $fonts;
-    font-size: large;
+  background-color: $bg;
+  color: $fg;
+  padding: 25px;
+  font-family: $fonts;
+  font-size: large;
 }
 
-.wraps {
-    max-width: 825px;
-    margin: auto;
+.cr-wrapper {
+  max-width: 825px;
+  margin: auto;
 }
 
-.lists {
-    margin: auto;
-    text-align: justify;
-    text-justify: inter-word;
+.cr-list {
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 footer {
-    color: $fg;
-    padding: 15px;
-    padding-top: 20px;
-    padding-bottom: 1px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    display: inline-block;
-    width: calc(100% - 30px);
-    border-top: 2px solid $fg;
+  color: $fg;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-top: 2px solid $fg;
 }
 
 a {
-    color: $fg;
+  color: $fg;
 }
 
 code {
-    font-family: $fonts;
+  font-family: $fonts;
 }
 
 hr {
-    border: 1px solid $fg;
+  border: 1px solid $fg;
 }
 
-.sfont {
-    color: $accent;
-    font-weight: 400;
-    font-style: italic;
+.cr-highlight-font {
+  color: $accent;
+  font-weight: 400;
+  font-style: italic;
 }
 
-.sname {
-    font-size: 32pt;
-    font-weight: 400;
+.cr-site-name {
+  font-size: 32pt;
+  font-weight: 400;
 }
 
-.fnote {
-    font-size: medium;
+.cr-footnote {
+  font-size: medium;
 }
 
-//.ccbut {
-//    filter: invert(1);
-//}
-
-.ccbut:hover {
-    cursor: default;
+.cr-cc-icon:hover {
+  cursor: default;
 }
 
-.ccbut img:hover {
-    cursor: help;
+.cr-cc-icon img:hover {
+  cursor: help;
 }
 
-.parag {
-    color: $fg;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: 100%;
-    text-align: justify;
+.cr-paragraph {
+  color: $fg;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
 }
 
-.butts {
-    background-color: $fg;
-    color: $bg;
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    display: inline-block;
-    width: calc(100% - 30px);
-    transition-duration: 0.3s;
-    //border: 1.5px solid $fg;
-    border-radius: 5px;
+.cr-button {
+  background-color: $fg;
+  color: $bg;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  transition-duration: 0.3s;
+  //border: 1.5px solid $fg;
+  border-radius: 5px;
 }
 
-.butts:hover {
-    background-color: $accent;
-    //color: $fg;
+.cr-button:hover {
+  background-color: $accent;
+  //color: $fg;
 }
 
-.bicon {
-    float: right;
+.cr-button-icon {
+  float: right;
 }
 
-.heads {
-    color: $accent;
-    width: calc(100% - 30px);
-    font-size: xx-large;
+.cr-header {
+  color: $accent;
+  width: calc(100% - 30px);
+  font-size: xx-large;
 }
 
-.hdimg {
-    width: 32px;
-    height: 32px;
+.cr-header-image {
+  width: 32px;
+  height: 32px;
 }
 
-.plink {
-    background-color: $accent;
-    color: $fg;
-    padding: 0px 15px 0px 15px;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: calc(100% - 30px);
-    transition-duration: 0.3s;
+.cr-notice {
+  background: repeating-linear-gradient(
+    -45deg,
+    $yellow,
+    $yellow 10px,
+    $orange 10px,
+    $orange 20px
+  );
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: calc(100% - 30px);
+  //border-bottom: 2px solid $fg;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.plink:hover {
-    background-color: $fg;
-    color: $bg;
+.cr-notice h2 {
+  font-weight: 400;
 }
 
-.ntice {
-    background: repeating-linear-gradient(
-        -45deg,
-        $yellow,
-        $yellow 10px,
-        $orange 10px,
-        $orange 20px
-    );
-    color: white;
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: inline-block;
-    width: calc(100% - 30px);
-    //border-bottom: 2px solid $fg;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.hlink {
-    text-decoration: none;
+.cr-header-link {
+  text-decoration: none;
 }
