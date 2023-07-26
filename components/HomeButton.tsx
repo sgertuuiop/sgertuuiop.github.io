@@ -6,7 +6,7 @@ const HomeButton = ({}) => {
       <Link className="cr-button" href="/">
         Go home
         <div className="cr-button-icon">
-          <i className="fa fa-person-walking-arrow-loop-left" />
+          <i className="ti ti-home" />
         </div>
       </Link>
       <br />
