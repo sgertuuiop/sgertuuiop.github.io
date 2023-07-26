@@ -11,9 +11,6 @@ const Button: FC<props> = ({ href, title }) => {
     <div>
       <Link className="cr-button" href={href}>
         {title}
-        <div className="cr-button-icon">
-          <i className="fa fa-person-walking-arrow-right" />
-        </div>
       </Link>
       <br />
     </div>

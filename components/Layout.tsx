@@ -17,7 +17,10 @@ const Layout: FC<props> = ({ title, description, children }) => {
         <title>{title} « Christian Rodríguez</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.png" />
-
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.25.0/tabler-icons.min.css"
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta property="og:title" content={title + " « Christian Rodríguez"} />
@@ -39,7 +42,6 @@ const Layout: FC<props> = ({ title, description, children }) => {
         />
       </Head>
       <main>
-        <Script src="https://kit.fontawesome.com/00db056957.js" />
         <Header title={title} />
         {children}
         <Footer />

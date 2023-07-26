@@ -12,7 +12,7 @@ const ExtButton: FC<props> = ({ href, title, rel }) => {
       <a className="cr-button" href={href} rel={rel + " external"}>
         {title}
         <div className="cr-button-icon">
-          <i className="fa-solid fa-person-walking-dashed-line-arrow-right" />
+          <i className="ti ti-external-link" />
         </div>
       </a>
       <br />

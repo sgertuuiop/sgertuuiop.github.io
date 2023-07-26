@@ -18,9 +18,9 @@ const Header: FC<props> = ({ title }) => {
               height="32"
               src="/assets/favicon.png"
             />{" "}
-            Christian Rodríguez
+            <i>Christian Rodríguez</i>
           </Link>{" "}
-          » <i>{title}</i>
+          » {title}
         </p>
       </div>
     </div>
