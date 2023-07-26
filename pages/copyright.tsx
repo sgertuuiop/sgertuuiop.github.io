@@ -55,7 +55,6 @@ export default function Copyright() {
         </div>
         <ExtButton
           href="https://creativecommons.org/licenses/by-nd/4.0/legalcode"
-          icon="ti-creative-commons"
           title="View full licence"
           rel="license"
         />
