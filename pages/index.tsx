@@ -10,7 +10,7 @@ export default function Home() {
         <ExtButton href="https://sgertuuiop.tumblr.com" title="Tumblr" rel="" />
         <ExtButton
           href="https://mstdn.social/@sgertuuiop"
-          title="mstdn.social"
+          title="Mastodon (mstdn.social)"
           rel="me"
         />
         <br />
