@@ -4,6 +4,7 @@ import Link from "next/link";
 type props = {
   href: string;
   title: string;
+  rel?: string;
 };
 
 const Button: FC<props> = ({ href, title }) => {
@@ -17,4 +18,32 @@ const Button: FC<props> = ({ href, title }) => {
   );
 };
 
-export default Button;
+const ExtButton: FC<props> = ({ href, title, rel }) => {
+  return (
+    <div>
+      <a className="cr-button" href={href} rel={rel + " external"}>
+        {title}
+        <div className="cr-button-icon">
+          <i className="ti ti-external-link" />
+        </div>
+      </a>
+      <br />
+    </div>
+  );
+};
+
+const HomeButton = ({}) => {
+  return (
+    <div>
+      <Link className="cr-button" href="/">
+        Go home
+        <div className="cr-button-icon">
+          <i className="ti ti-home" />
+        </div>
+      </Link>
+      <br />
+    </div>
+  );
+};
+
+export { Button, ExtButton, HomeButton };
