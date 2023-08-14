@@ -25,10 +25,12 @@ const Footer = ({}) => {
         />{" "}
       </span>
       <p className="cr-footnote">
-        Except where otherwise noted, the content on{" "}
-        <a href="https://sgertuuiop.github.io">this website</a> by Christian
-        Rodríguez is licensed under{" "}
+        Copyright © 2023 Christian Rodríguez. <br /> Except where otherwise
+        noted, the content on{" "}
+        <a href="https://sgertuuiop.github.io">this website</a> is licensed
+        under{" "}
         <a
+          className="cr-link-external"
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
           href="http://creativecommons.org/licenses/by-nd/4.0/"
           rel="license"

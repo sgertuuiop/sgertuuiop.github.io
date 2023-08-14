@@ -1,20 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 
-$bg: #f5ebe0;
-$bg2: #e2e1de;
-$accent: #006064;
-$fg: #252423;
+$bg: #000000;
+$bg2: #101010;
+$accent: #84ffff;
+$fg: #ffffff;
 $grey: #aaaaaa;
-$red: #b71c1c;
-$orange: #e65100;
-$yellow: #f57f17;
-$green: #1b5e20;
-$blue: #0d47a1;
-$purple: #311b92;
+$red: #ff8a80;
+$orange: #ffd180;
+$yellow: #ffff8d;
+$green: #b9f6ca;
+$blue: #80d8ff;
+$purple: #b388ff;
 $disabled: #444444;
 
-$fonts: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
+$fonts: "Inter", "Helvetica Neue", Arial, sans-serif;
 
 .cr-foreground {
   color: $fg;
@@ -47,12 +46,23 @@ $fonts: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
   color: $disabled;
 }
 
+.cr-accent {
+  color: $accent;
+}
+
 body {
   background-color: $bg;
+  /* background: repeating-linear-gradient(
+    -45deg,
+    $bg,
+    $bg 10px,
+    $bg2 10px,
+    $bg2 20px
+  ); */
   color: $fg;
   padding: 25px;
   font-family: $fonts;
-  font-size: large;
+  font-feature-settings: "ss01", "ss03", "ss04", "cv01", "cv10";
 }
 
 h1,
@@ -61,8 +71,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  font-style: italic;
+  font-weight: bold;
+  color: $accent;
 }
 
 .cr-wrapper {
@@ -91,23 +101,52 @@ h6 {
 
 a {
   color: $fg;
+  //transition-duration: 0.3s;
 }
 
-code {
-  font-family: monospace;
-  background: $bg2;
-  padding: 5px;
-  border-radius: 5px;
+a:hover {
+  color: $accent;
+}
+
+.cr-link-external::after {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  content: "\2006\ea99";
+}
+
+pre {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-size: smaller;
+}
+
+.cr-code-title {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-size: x-small;
+}
+
+.cr-code {
+  background-color: $bg2;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  //transition-duration: 0.3s;
+  //border: 1.5px solid $fg;
+  border-radius: 0px;
 }
 
 hr {
   border: 1px solid $fg;
 }
 
-.cr-highlight-font {
-  color: $accent;
-  font-weight: 400;
-  font-style: italic;
+img.cr-image {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cr-site-name {
@@ -116,7 +155,7 @@ hr {
 }
 
 .cr-footnote {
-  font-size: medium;
+  font-size: small;
 }
 
 .cr-cc-icon {
@@ -133,7 +172,7 @@ hr {
 
 .cr-paragraph {
   color: $fg;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   display: inline-block;
   width: 100%;
   text-align: justify;
@@ -148,14 +187,14 @@ hr {
   text-decoration: none;
   display: inline-block;
   width: calc(100% - 30px);
-  transition-duration: 0.3s;
+  //transition-duration: 0.3s;
   //border: 1.5px solid $fg;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .cr-button:hover {
   background-color: $accent;
-  //color: $fg;
+  color: $bg;
 }
 
 .cr-button-icon {
@@ -165,35 +204,33 @@ hr {
 .cr-header {
   color: $accent;
   width: calc(100% - 30px);
-  font-size: xx-large;
+  font-size: 18pt;
 }
 
 .cr-header-image {
   width: 32px;
   height: 32px;
+  padding-bottom: 16px;
 }
 
 .cr-notice {
   background: repeating-linear-gradient(
     -45deg,
-    $yellow,
-    $yellow 10px,
-    $orange 10px,
-    $orange 20px
+    #ef6c00,
+    #ef6c00 10px,
+    #e65100 10px,
+    #e65100 20px
   );
-  color: white;
+  color: #ffffff;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
   width: calc(100% - 30px);
-  //border-bottom: 2px solid $fg;
-  border-radius: 5px;
-  text-align: center;
 }
 
-.cr-notice h2 {
-  font-weight: 400;
+.cr-notice-title {
+  color: $fg;
 }
 
 .cr-header-link {

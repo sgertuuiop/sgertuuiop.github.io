@@ -17,10 +17,11 @@ const Header: FC<props> = ({ title }) => {
               width="32"
               height="32"
               src="/assets/favicon.png"
-            />{" "}
-            <i>Christian Rodríguez</i>
+            />
+            <br />
+            <b>CHRISTIAN RODRIGUEZ</b>
           </Link>{" "}
-          » {title}
+          -&gt; {title}
         </p>
       </div>
     </div>
