@@ -1,20 +1,15 @@
 import React, { FC } from "react";
-import Link from "next/link";
 
 type props = {
+  title: string;
   text: string;
 };
 
-const Notice: FC<props> = ({ text }) => {
+const Notice: FC<props> = ({ title, text }) => {
   return (
-    <div className="cr-notice">
-      <h2>
-        <b>
-          <i className="bi bi-exclamation-triangle-fill"></i> NOTICE
-        </b>
-      </h2>
-      <p>{text}</p>
-    </div>
+    <p className="cr-notice">
+      <b>{title}:</b> {text}
+    </p>
   );
 };
 

@@ -11,7 +11,10 @@ export default function Copyright() {
         <div className="cr-paragraph">
           <p>
             Unless otherwise noted, content on this site is licensed under the{" "}
-            <a href="http://creativecommons.org/licenses/by-nd/4.0/">
+            <a
+              className="cr-link-external"
+              href="http://creativecommons.org/licenses/by-nd/4.0/"
+            >
               Creative Commons Attribution-NoDerivatives 4.0 International
             </a>{" "}
             licence.
@@ -56,6 +59,7 @@ export default function Copyright() {
           href="https://creativecommons.org/licenses/by-nd/4.0/legalcode"
           title="View full licence"
           rel="license"
+          icon="license"
         />
       </Layout>
     </>

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@charset "UTF-8";
 @import url("https://rsms.me/inter/inter.css");
 .cr-foreground {
-  color: #252423;
+  color: #ffffff;
 }
 
 .cr-background {
-  color: #f5ebe0;
+  color: #000000;
 }
 
 .cr-grey {
@@ -13,39 +13,50 @@
 }
 
 .cr-red {
-  color: #b71c1c;
+  color: #ff8a80;
 }
 
 .cr-orange {
-  color: #e65100;
+  color: #ffd180;
 }
 
 .cr-yellow {
-  color: #f57f17;
+  color: #ffff8d;
 }
 
 .cr-green {
-  color: #1b5e20;
+  color: #b9f6ca;
 }
 
 .cr-blue {
-  color: #0d47a1;
+  color: #80d8ff;
 }
 
 .cr-purple {
-  color: #311b92;
+  color: #b388ff;
 }
 
 .cr-disabled {
   color: #444444;
 }
 
+.cr-accent {
+  color: #84ffff;
+}
+
 body {
-  background-color: #f5ebe0;
-  color: #252423;
+  background-color: #000000;
+  /* background: repeating-linear-gradient(
+    -45deg,
+    $bg,
+    $bg 10px,
+    $bg2 10px,
+    $bg2 20px
+  ); */
+  color: #ffffff;
   padding: 25px;
-  font-family: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: large;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "ss03", "ss04", "cv01", "cv10";
 }
 
 h1,
@@ -54,8 +65,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-  font-style: italic;
+  font-weight: bold;
+  color: #84ffff;
 }
 
 .cr-wrapper {
@@ -70,7 +81,7 @@ h6 {
 }
 
 .cr-footer {
-  color: #252423;
+  color: #ffffff;
   padding: 15px;
   padding-top: 20px;
   padding-bottom: 1px;
@@ -79,28 +90,54 @@ h6 {
   text-decoration: none;
   display: inline-block;
   width: calc(100% - 30px);
-  border-top: 2px solid #252423;
+  border-top: 2px solid #ffffff;
 }
 
 a {
-  color: #252423;
+  color: #ffffff;
 }
 
-code {
-  font-family: monospace;
-  background: #e2e1de;
-  padding: 5px;
-  border-radius: 5px;
+a:hover {
+  color: #84ffff;
+}
+
+.cr-link-external::after {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  content: " \ea99";
+}
+
+pre {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-size: smaller;
+}
+
+.cr-code-title {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-size: x-small;
+}
+
+.cr-code {
+  background-color: #101010;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-radius: 0px;
 }
 
 hr {
-  border: 1px solid #252423;
+  border: 1px solid #ffffff;
 }
 
-.cr-highlight-font {
-  color: #006064;
-  font-weight: 400;
-  font-style: italic;
+img.cr-image {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cr-site-name {
@@ -109,7 +146,7 @@ hr {
 }
 
 .cr-footnote {
-  font-size: medium;
+  font-size: small;
 }
 
 .cr-cc-icon {
@@ -125,28 +162,28 @@ hr {
 }
 
 .cr-paragraph {
-  color: #252423;
-  margin-bottom: 20px;
+  color: #ffffff;
+  margin-bottom: 4px;
   display: inline-block;
   width: 100%;
   text-align: justify;
 }
 
 .cr-button {
-  background-color: #252423;
-  color: #f5ebe0;
+  background-color: #ffffff;
+  color: #000000;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
   width: calc(100% - 30px);
-  transition-duration: 0.3s;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 
 .cr-button:hover {
-  background-color: #006064;
+  background-color: #84ffff;
+  color: #000000;
 }
 
 .cr-button-icon {
@@ -154,30 +191,29 @@ hr {
 }
 
 .cr-header {
-  color: #006064;
+  color: #84ffff;
   width: calc(100% - 30px);
-  font-size: xx-large;
+  font-size: 18pt;
 }
 
 .cr-header-image {
   width: 32px;
   height: 32px;
+  padding-bottom: 16px;
 }
 
 .cr-notice {
-  background: repeating-linear-gradient(-45deg, #f57f17, #f57f17 10px, #e65100 10px, #e65100 20px);
-  color: white;
+  background: repeating-linear-gradient(-45deg, #ef6c00, #ef6c00 10px, #e65100 10px, #e65100 20px);
+  color: #ffffff;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   display: inline-block;
   width: calc(100% - 30px);
-  border-radius: 5px;
-  text-align: center;
 }
 
-.cr-notice h2 {
-  font-weight: 400;
+.cr-notice-title {
+  color: #ffffff;
 }
 
 .cr-header-link {

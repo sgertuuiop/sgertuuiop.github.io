@@ -3,6 +3,8 @@ import Head from "next/head";
 import Script from "next/script";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Notice from "./Notice";
+// import Notice from "./Notice";
 
 type props = {
   title: string;
@@ -14,7 +16,7 @@ const Layout: FC<props> = ({ title, description, children }) => {
   return (
     <div className="cr-wrapper">
       <Head>
-        <title>{title} « Christian Rodríguez</title>
+        <title>{`${title} « CHRISTIAN RODRIGUEZ`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.png" />
         <link
@@ -23,7 +25,7 @@ const Layout: FC<props> = ({ title, description, children }) => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
-        <meta property="og:title" content={title + " « Christian Rodríguez"} />
+        <meta property="og:title" content={`${title} « CHRISTIAN RODRIGUEZ`} />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
@@ -33,7 +35,7 @@ const Layout: FC<props> = ({ title, description, children }) => {
         <meta property="twitter:url" content="https://sgertuuiop.github.io/" />
         <meta
           property="twitter:title"
-          content={title + " « Christian Rodríguez"}
+          content={`${title} « CHRISTIAN RODRIGUEZ`}
         />
         <meta property="twitter:description" content={description} />
         <meta
