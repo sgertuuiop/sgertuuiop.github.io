@@ -8,7 +8,7 @@ type props = {
 const Notice: FC<props> = ({ title, text }) => {
   return (
     <p className="cr-notice">
-      <b>{title}:</b> {text}
+      <strong>{title}:</strong> {text}
     </p>
   );
 };
