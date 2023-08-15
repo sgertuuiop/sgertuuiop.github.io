@@ -60,14 +60,16 @@ export default function TestPage() {
         />
         <div className="cr-paragraph">
           <h2>Lorem ipsum? Dolor sit amet!</h2>
-          <img
-            className="cr-image"
-            alt="Lorem ipsum."
-            src="https://picsum.photos/id/25/2048/512"
-          />
-          <p className="cr-footnote">
-            Lorem ipsum dolor/Alejandro Escamilla via Lorem Picsum
-          </p>
+          <figure>
+            <img
+              className="cr-image"
+              alt="Lorem ipsum."
+              src="https://picsum.photos/id/25/1920/1080"
+            />
+            <figcaption>
+              Lorem ipsum dolor/Alejandro Escamilla via Lorem Picsum
+            </figcaption>
+          </figure>
           <Notice title="WARNING" text="LOREM IPSUM DOLOR SIT AMET!" />
           <p>
             Donec nec vulputate¹ mauris. Pellentesque feugiat consequat libero,
