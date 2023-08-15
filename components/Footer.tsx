@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = ({}) => {
   return (
     <footer id="footer" className="cr-footer">
@@ -29,14 +31,13 @@ const Footer = ({}) => {
         noted, the content on{" "}
         <a href="https://sgertuuiop.github.io">this website</a> is licensed
         under{" "}
-        <a
-          className="cr-link-external"
+        <Link
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
-          href="http://creativecommons.org/licenses/by-nd/4.0/"
+          href="/copyright"
           rel="license"
         >
           CC BY-ND 4.0
-        </a>
+        </Link>
       </p>
     </footer>
   );

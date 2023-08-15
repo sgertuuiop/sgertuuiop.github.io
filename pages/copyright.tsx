@@ -26,37 +26,33 @@ export default function Copyright() {
         <div className="cr-paragraph">
           <p>Under this licence, you are free to:</p>
 
-          <div className="cr-list">
-            <p>
-              <b>Share:</b> Copy and redistribute this work in any medium or
-              format for any purpose, even commercially
-            </p>
-          </div>
+          <p>
+            <b>Share:</b> Copy and redistribute this work in any medium or
+            format for any purpose, even commercially
+          </p>
         </div>
 
         <div className="cr-paragraph">
           <p>Under the following terms:</p>
 
-          <div className="cr-list">
-            <p>
-              <b>Attribution:</b> You must give appropriate credit, provide a
-              link to the licence, and indicate if changes were made. You may do
-              so in any reasonable manner, but not in any way that suggests the
-              licensor endorses you or your use.
-            </p>
-            <p>
-              <b>NoDerivatives:</b> If you remix, transform, or build upon this
-              work, you may not distribute the modified work.
-            </p>
-            <p>
-              <b>No additional restrictions:</b> You may not apply legal terms
-              or technological measures that legally restrict others from doing
-              anything the licence permits.
-            </p>
-          </div>
+          <p>
+            <b>Attribution:</b> You must give appropriate credit, provide a link
+            to the licence, and indicate if changes were made. You may do so in
+            any reasonable manner, but not in any way that suggests the licensor
+            endorses you or your use.
+          </p>
+          <p>
+            <b>NoDerivatives:</b> If you remix, transform, or build upon this
+            work, you may not distribute the modified work.
+          </p>
+          <p>
+            <b>No additional restrictions:</b> You may not apply legal terms or
+            technological measures that legally restrict others from doing
+            anything the licence permits.
+          </p>
         </div>
-        <ExtButton
-          href="https://creativecommons.org/licenses/by-nd/4.0/legalcode"
+        <Button
+          href="/licence"
           title="View full licence"
           rel="license"
           icon="license"
