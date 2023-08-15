@@ -1,5 +1,4 @@
 import LayoutBlank from "../components/LayoutBlank";
-import LicenceFooter from "../components/LicenceFooter";
 import { HomeButton } from "../components/Button";
 
 export default function LicenceText() {
@@ -33,7 +32,7 @@ export default function LicenceText() {
             <ol type="a">
               <li>
                 <p>
-                  <b>Adapted material</b> means material subject to Copyright
+                  <b>Adapted Material</b> means material subject to Copyright
                   and Similar Rights that is derived from or based upon the
                   Licensed Material and in which the Licensed Material is
                   translated, altered, arranged, transformed, or otherwise
@@ -557,7 +556,21 @@ export default function LicenceText() {
           </ol>
         </div>
         <HomeButton />
-        <LicenceFooter />
+        <footer id="footer" className="cr-footer">
+          <span className="cr-cc-icon">
+            <i className="ti ti-creative-commons-zero" />{" "}
+          </span>
+          <p className="cr-footnote">
+            The text of this Creative Commons public licence is dedicated to the
+            public domain under the{" "}
+            <a
+              className="cr-link-external"
+              href="https://creativecommons.org/publicdomain/zero/1.0/"
+            >
+              CC0 Public Domain Dedication
+            </a>
+          </p>
+        </footer>
       </LayoutBlank>
     </>
   );
