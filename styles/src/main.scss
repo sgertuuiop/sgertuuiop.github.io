@@ -138,6 +138,19 @@ pre {
   border-radius: 0px;
 }
 
+.cr-block {
+  background-color: $bg2;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  //transition-duration: 0.3s;
+  //border: 1.5px solid $fg;
+  border-radius: 0px;
+}
+
 hr {
   border: 1px solid $fg;
 }
@@ -175,7 +188,6 @@ img.cr-image {
   margin-bottom: 4px;
   display: inline-block;
   width: 100%;
-  text-align: justify;
 }
 
 .cr-button {

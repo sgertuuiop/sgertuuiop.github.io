@@ -129,6 +129,17 @@ pre {
   border-radius: 0px;
 }
 
+.cr-block {
+  background-color: #101010;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  display: inline-block;
+  width: calc(100% - 30px);
+  border-radius: 0px;
+}
+
 hr {
   border: 1px solid #ffffff;
 }
@@ -166,7 +177,6 @@ img.cr-image {
   margin-bottom: 4px;
   display: inline-block;
   width: 100%;
-  text-align: justify;
 }
 
 .cr-button {
