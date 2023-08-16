@@ -8,9 +8,9 @@ type props = {
 const Header: FC<props> = ({ title }) => {
   return (
     <div>
-      <div className="cr-header">
-        <p>
-          <Link href="/" className="cr-header cr-header-link">
+      <header role="banner" className="cr-header">
+        <h1 className="cr-header">
+          <Link href="/" className="cr-header-link">
             <img
               className="cr-header-image"
               alt=""
@@ -22,8 +22,8 @@ const Header: FC<props> = ({ title }) => {
             <b>CHRISTIAN RODRIGUEZ</b>
           </Link>{" "}
           -&gt; {title}
-        </p>
-      </div>
+        </h1>
+      </header>
     </div>
   );
 };
