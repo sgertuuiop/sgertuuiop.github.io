@@ -558,7 +558,7 @@ export default function LicenceText() {
         <HomeButton />
         <footer id="footer" className="cr-footer">
           <span className="cr-cc-icon">
-            <i className="ti ti-creative-commons-zero" />{" "}
+            <i className="ti ti-creative-commons-zero" aria-hidden />{" "}
           </span>
           <p className="cr-footnote">
             The text of this Creative Commons public licence is dedicated to the

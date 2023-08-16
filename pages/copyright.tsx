@@ -10,7 +10,8 @@ export default function Copyright() {
       >
         <div className="cr-paragraph">
           <p>
-            Unless otherwise noted, content on this site is licensed under the{" "}
+            Except where otherwise noted, content on this site is licensed under
+            the{" "}
             <a
               className="cr-link-external"
               href="http://creativecommons.org/licenses/by-nd/4.0/"
