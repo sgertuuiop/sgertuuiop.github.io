@@ -4,14 +4,18 @@ const Footer = ({}) => {
   return (
     <footer id="footer" className="cr-footer">
       <span className="cr-cc-icon">
-        <i className="ti ti-creative-commons" />{" "}
-        <i className="ti ti-creative-commons-by" />{" "}
-        <i className="ti ti-creative-commons-nd" />{" "}
+        <i className="ti ti-creative-commons" aria-hidden />{" "}
+        <i className="ti ti-creative-commons-by" aria-hidden />{" "}
+        <i className="ti ti-creative-commons-nd" aria-hidden />{" "}
+        <i
+          className="ti ti-accessible cr-a11y-icon"
+          title="This website attempts to comply with WCAG 2.1 AA accessibility guidelines."
+          aria-hidden
+        />
       </span>
       <p className="cr-footnote">
-        Copyright © 2023 Christian Rodríguez <br /> Except where otherwise
-        noted, the content on{" "}
-        <a href="https://sgertuuiop.github.io">this website</a> is licensed
+        <span aria-hidden>Copyright</span> © 2023 Christian Rodríguez <br />{" "}
+        Except where otherwise noted, the content on this website is licensed
         under{" "}
         <Link
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
@@ -23,7 +27,8 @@ const Footer = ({}) => {
         <br />
       </p>
       <p className="cr-footnote">
-        Made with <i className="ti ti-heart-filled cr-accent" /> using{" "}
+        Made with <i className="ti ti-heart-filled cr-accent" aria-hidden />
+        <span className="cr-a11y-desc">love</span> using{" "}
         <a className="cr-link-external" href="https://nextjs.org/">
           Next.js
         </a>
