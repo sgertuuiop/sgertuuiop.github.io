@@ -21,7 +21,8 @@ const Header: FC<props> = ({ title }) => {
             <br />
             <b>CHRISTIAN RODRIGUEZ</b>
           </Link>{" "}
-          -&gt; {title}
+          <span aria-hidden>-&gt;&nbsp;</span>
+          {title}
         </h1>
       </header>
     </div>

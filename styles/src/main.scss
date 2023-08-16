@@ -224,8 +224,7 @@ img.cr-image {
 
 .cr-header {
   color: $accent;
-  width: calc(100% - 30px);
-  font-size: 18pt;
+  font-size: x-large;
   font-weight: normal;
   margin: 35px 0px 30px 0px;
 }
@@ -259,4 +258,19 @@ img.cr-image {
 .cr-header-link {
   text-decoration: none;
   color: $accent;
+}
+
+.cr-a11y-icon {
+  float: right;
+  color: $accent;
+}
+
+.cr-a11y-desc {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
