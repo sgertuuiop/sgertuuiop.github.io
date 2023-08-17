@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import { Button, ExtButton } from "../components/Button";
+import Layout from "@/components/Layout";
+import { Button, ExtButton } from "@/components/Button";
 
 export default function Copyright() {
   return (
