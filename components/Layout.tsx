@@ -1,10 +1,7 @@
 import React, { FC } from "react";
 import Head from "next/head";
-import Script from "next/script";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Notice from "./Notice";
-// import Notice from "./Notice";
+import Header from "./Header";
+import Footer from "./Footer";
 
 type props = {
   title: string;

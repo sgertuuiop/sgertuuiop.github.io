@@ -1,5 +1,5 @@
-import LayoutBlank from "../components/LayoutBlank";
-import { HomeButton } from "../components/Button";
+import LayoutBlank from "@/components/LayoutBlank";
+import { HomeButton } from "@/components/Button";
 
 export default function LicenceText() {
   return (

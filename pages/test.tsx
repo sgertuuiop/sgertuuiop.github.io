@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
-import { Button, ExtButton, HomeButton } from "../components/Button";
-import Notice from "../components/Notice";
+import Layout from "@/components/Layout";
+import { Button, ExtButton, HomeButton } from "@/components/Button";
+import Notice from "@/components/Notice";
 
 export default function TestPage() {
   return (
