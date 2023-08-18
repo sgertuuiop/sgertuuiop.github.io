@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = ({}) => {
   return (
-    <footer id="footer" className="cr-footer">
+    <footer role="contentinfo" id="footer" className="cr-footer">
       <span className="cr-cc-icon">
         <i className="ti ti-creative-commons" aria-hidden />{" "}
         <i className="ti ti-creative-commons-by" aria-hidden />{" "}

@@ -7,25 +7,23 @@ type props = {
 
 const Header: FC<props> = ({ title }) => {
   return (
-    <div>
-      <header role="banner" className="cr-header">
-        <h1 className="cr-header">
-          <Link href="/" className="cr-header-link">
-            <img
-              className="cr-header-image"
-              alt=""
-              width="32"
-              height="32"
-              src="/assets/favicon.png"
-            />
-            <br />
-            <b>CHRISTIAN RODRIGUEZ</b>
-          </Link>{" "}
-          <span aria-hidden>-&gt;&nbsp;</span>
-          {title}
-        </h1>
-      </header>
-    </div>
+    <header role="banner" className="cr-header">
+      <h1 className="cr-header">
+        <Link href="/" className="cr-header-link">
+          <img
+            className="cr-header-image"
+            alt=""
+            width="32"
+            height="32"
+            src="/assets/favicon.png"
+          />
+          <br />
+          <b>CHRISTIAN RODRIGUEZ</b>
+        </Link>{" "}
+        <span aria-hidden>→&nbsp;</span>
+        {title}
+      </h1>
+    </header>
   );
 };
 
