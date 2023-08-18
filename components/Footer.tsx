@@ -7,11 +7,14 @@ const Footer = ({}) => {
         <i className="ti ti-creative-commons" aria-hidden />{" "}
         <i className="ti ti-creative-commons-by" aria-hidden />{" "}
         <i className="ti ti-creative-commons-nd" aria-hidden />{" "}
-        <i
-          className="ti ti-accessible cr-a11y-icon"
-          title="This website attempts to comply with WCAG 2.1 AA accessibility guidelines."
-          aria-hidden
-        />
+        <Link href="/a11y">
+          <i
+            className="ti ti-accessible cr-a11y-icon"
+            title="Accessibility statement"
+            aria-hidden
+          />
+          <span className="cr-a11y-desc">Accessibility statement</span>
+        </Link>
       </span>
       <p className="cr-footnote">
         <span aria-hidden>Copyright</span> © 2023 Christian Rodríguez <br />{" "}
