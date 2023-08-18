@@ -7,7 +7,7 @@ const Footer = ({}) => {
         <i className="ti ti-creative-commons" aria-hidden />{" "}
         <i className="ti ti-creative-commons-by" aria-hidden />{" "}
         <i className="ti ti-creative-commons-nd" aria-hidden />{" "}
-        <Link href="/a11y">
+        <Link style={{ float: "right" }} href="/a11y">
           <i
             className="ti ti-accessible cr-a11y-icon"
             title="Accessibility statement"
