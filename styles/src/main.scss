@@ -4,6 +4,7 @@
 $bg: #000000;
 $bg2: #101010;
 $accent: #84ffff;
+$highlight: #00e676;
 $fg: #ffffff;
 $grey: #aaaaaa;
 $red: #ff8a80;
@@ -107,6 +108,10 @@ a {
 
 a:hover {
   color: $accent;
+}
+
+abbr:hover {
+  cursor: help;
 }
 
 .cr-link-external::after {
@@ -274,4 +279,8 @@ img.cr-image {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+:focus-visible {
+  outline: $highlight dashed 5px;
 }
