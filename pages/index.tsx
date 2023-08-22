@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Button, ExtButton } from "@/components/Button";
+import { Button, ExtButton } from "@/components/Buttons";
 
 export default function Home() {
   return (

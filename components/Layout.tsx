@@ -1,15 +1,22 @@
 import React, { FC } from "react";
 import Head from "next/head";
-import Header from "./Header";
-import Footer from "./Footer";
+import { Header, Footer } from "./Landmarks";
 
 type props = {
   title: string;
   description: string;
+  noheader?: boolean;
+  nofooter?: boolean;
   children: JSX.Element[];
 };
 
-const Layout: FC<props> = ({ title, description, children }) => {
+const Layout: FC<props> = ({
+  title,
+  description,
+  noheader,
+  nofooter,
+  children,
+}) => {
   return (
     <div className="cr-wrapper">
       <Head>
@@ -37,9 +44,9 @@ const Layout: FC<props> = ({ title, description, children }) => {
         />
       </Head>
       <main>
-        <Header title={title} />
+        {noheader ? null : <Header title={title} />}
         {children}
-        <Footer />
+        {nofooter ? null : <Footer />}
       </main>
     </div>
   );
