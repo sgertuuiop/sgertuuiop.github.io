@@ -1,12 +1,14 @@
-import LayoutBlank from "@/components/LayoutBlank";
-import { HomeButton } from "@/components/Button";
+import Layout from "@/components/Layout";
+import { HomeButton } from "@/components/Buttons";
 
 export default function LicenceText() {
   return (
     <>
-      <LayoutBlank
+      <Layout
         title="Licence legal text"
         description="Terms for re-use of content hosted on this website."
+        noheader
+        nofooter
       >
         <h1>
           Creative Commons Attribution-NoDerivatives 4.0 International Public
@@ -571,7 +573,7 @@ export default function LicenceText() {
             </a>
           </p>
         </footer>
-      </LayoutBlank>
+      </Layout>
     </>
   );
 }
