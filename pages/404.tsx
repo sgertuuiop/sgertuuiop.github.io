@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { HomeButton } from "@/components/Button";
+import { HomeButton } from "@/components/Buttons";
 
 export default function Http404() {
   return (
