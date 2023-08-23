@@ -22,7 +22,11 @@ const Button: FC<props> = ({ href, title, icon }) => {
 const ExtButton: FC<props> = ({ href, title, rel, icon }) => {
   return (
     <>
-      <a className="cr-button" href={href} rel={rel + " external"}>
+      <a
+        className="cr-button"
+        href={href}
+        rel={rel ? rel + " external" : "external"}
+      >
         <i className={"ti ti-" + icon} /> {title}
         <div className="cr-button-icon">
           <i className="ti ti-external-link" />
