@@ -10,18 +10,18 @@ type props = {
 
 const Button: FC<props> = ({ href, title, icon }) => {
   return (
-    <div>
+    <>
       <Link className="cr-button" href={href}>
         <i className={"ti ti-" + icon} /> {title}
       </Link>
       <br />
-    </div>
+    </>
   );
 };
 
 const ExtButton: FC<props> = ({ href, title, rel, icon }) => {
   return (
-    <div>
+    <>
       <a className="cr-button" href={href} rel={rel + " external"}>
         <i className={"ti ti-" + icon} /> {title}
         <div className="cr-button-icon">
@@ -29,13 +29,13 @@ const ExtButton: FC<props> = ({ href, title, rel, icon }) => {
         </div>
       </a>
       <br />
-    </div>
+    </>
   );
 };
 
 const HomeButton = ({}) => {
   return (
-    <div>
+    <>
       <Link className="cr-button" href="/">
         <i className="ti ti-home" /> Go home
         <div className="cr-button-icon">
@@ -43,7 +43,7 @@ const HomeButton = ({}) => {
         </div>
       </Link>
       <br />
-    </div>
+    </>
   );
 };
 
