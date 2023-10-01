@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "npm",
+            "name": "Start dev server",
+            "command": "run",
+            "scripts": "dev",
+        }
+    ]
+}
