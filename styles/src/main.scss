@@ -1,19 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css");
 @import url("https://rsms.me/inter/inter.css");
 
-$colour-b1: hsl(0 0% 0%);
-$colour-b2: hsl(0 0% 5%);
-$colour-f1: hsl(0 0% 100%);
-$colour-f2: hsl(180 100% 80%);
-$colour-f3: hsl(135 100% 45%);
-$colour-no: hsl(0 0% 65%);
-$colour-re: hsl(0 100% 80%);
-$colour-or: hsl(30 100% 80%);
-$colour-yl: hsl(60 100% 80%);
-$colour-gr: hsl(135 77% 80%);
-$colour-bl: hsl(225 100% 80%);
-$colour-pr: hsl(270 100% 80%);
-$colour-xx: hsl(0 0% 25%);
+$colour-b1: hsl(0deg 0% 0%);
+$colour-b2: hsl(0deg 0% 5%);
+$colour-f1: hsl(0deg 0% 100%);
+$colour-f2: hsl(180deg 100% 80%);
+$colour-f3: hsl(135deg 100% 45%);
+$colour-no: hsl(0deg 0% 65%);
+$colour-re: hsl(0deg 100% 80%);
+$colour-or: hsl(30deg 100% 80%);
+$colour-yl: hsl(60deg 100% 80%);
+$colour-gr: hsl(135deg 100% 80%);
+$colour-bl: hsl(225deg 100% 80%);
+$colour-pr: hsl(270deg 100% 80%);
+$colour-xx: hsl(0deg 0% 25%);
 
 .cr-background {
   color: $colour-b1;
