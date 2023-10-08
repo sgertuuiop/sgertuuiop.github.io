@@ -1,55 +1,55 @@
 @import url("https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css");
 @import url("https://rsms.me/inter/inter.css");
 
-$bg: #000000;
-$bg2: #101010;
-$accent: #84ffff;
-$highlight: #00e676;
-$fg: #ffffff;
-$grey: #aaaaaa;
-$red: #ff8a80;
-$orange: #ffd180;
-$yellow: #ffff8d;
-$green: #b9f6ca;
-$blue: #80d8ff;
-$purple: #b388ff;
-$disabled: #444444;
+$colour-b1: hsl(0 0% 0%);
+$colour-b2: hsl(0 0% 5%);
+$colour-f1: hsl(0 0% 100%);
+$colour-f2: hsl(180 100% 80%);
+$colour-f3: hsl(135 100% 45%);
+$colour-no: hsl(0 0% 65%);
+$colour-re: hsl(0 100% 80%);
+$colour-or: hsl(30 100% 80%);
+$colour-yl: hsl(60 100% 80%);
+$colour-gr: hsl(135 77% 80%);
+$colour-bl: hsl(225 100% 80%);
+$colour-pr: hsl(270 100% 80%);
+$colour-xx: hsl(0 0% 25%);
 
 .cr-background {
-  color: $bg;
+  color: $colour-b1;
 }
 .cr-background-alt {
-  color: $bg2;
+  color: $colour-b2;
 }
 .cr-accent {
-  color: $accent;
+  color: $colour-f2;
 }
 .cr-highlight {
-  color: $highlight;
+  color: $colour-f3;
 }
 .cr-grey {
-  color: $grey;
+  color: $colour-no;
 }
 .cr-red {
-  color: $red;
+  color: $colour-re;
 }
 .cr-orange {
-  color: $orange;
+  color: $colour-or;
 }
 .cr-yellow {
-  color: $yellow;
+  color: $colour-yl;
 }
 .cr-green {
-  color: $green;
+  color: $colour-gr;
 }
 .cr-blue {
-  color: $blue;
+  color: $colour-bl;
 }
 .cr-purple {
-  color: $purple;
+  color: $colour-pr;
 }
 .cr-disabled {
-  color: $disabled;
+  color: $colour-xx;
 }
 
 :root {
@@ -62,8 +62,8 @@ $disabled: #444444;
 }
 
 body {
-  background-color: $bg;
-  color: $fg;
+  background-color: $colour-b1;
+  color: $colour-f1;
   padding: 25px;
   font-feature-settings: "ss01", "ss03", "ss04", "cv01", "cv10";
 }
@@ -75,15 +75,15 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-  color: $accent;
+  color: $colour-f2;
 }
 
 a {
-  color: $fg;
+  color: $colour-f1;
 }
 
 a:hover {
-  color: $accent;
+  color: $colour-f2;
 }
 
 abbr:hover {
@@ -91,7 +91,7 @@ abbr:hover {
 }
 
 hr {
-  border: 1px solid $fg;
+  border: 1px solid $colour-f1;
 }
 
 figure {
@@ -129,7 +129,7 @@ img.cr-image {
 }
 
 .cr-footer {
-  color: $fg;
+  color: $colour-f1;
   padding: 15px;
   padding-top: 20px;
   padding-bottom: 1px;
@@ -138,7 +138,7 @@ img.cr-image {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-top: 2px solid $fg;
+  border-top: 2px solid $colour-f1;
 }
 
 .cr-link-external::after {
@@ -149,7 +149,7 @@ img.cr-image {
 }
 
 .cr-block {
-  background-color: $bg2;
+  background-color: $colour-b2;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -174,15 +174,15 @@ img.cr-image {
 }
 
 .cr-paragraph {
-  color: $fg;
+  color: $colour-f1;
   margin-bottom: 4px;
   display: inline-block;
   width: 100%;
 }
 
 .cr-button {
-  background-color: $fg;
-  color: $bg;
+  background-color: $colour-f1;
+  color: $colour-b1;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -193,8 +193,8 @@ img.cr-image {
 }
 
 .cr-button:hover {
-  background-color: $accent;
-  color: $bg;
+  background-color: $colour-f2;
+  color: $colour-b1;
 }
 
 .cr-button-icon {
@@ -202,7 +202,7 @@ img.cr-image {
 }
 
 .cr-header {
-  color: $accent;
+  color: $colour-f2;
   font-size: x-large;
   font-weight: normal;
   margin: 35px 0px 30px 0px;
@@ -217,10 +217,10 @@ img.cr-image {
 .cr-notice {
   background: repeating-linear-gradient(
     -45deg,
-    #c62828,
-    #c62828 10px,
-    #b71c1c 10px,
-    #b71c1c 20px
+    hsl(0 65% 35%),
+    hsl(0 65% 35%) 10px,
+    hsl(0 75% 25%) 10px,
+    hsl(0 75% 25%) 20px
   );
   color: #ffffff;
   padding: 15px;
@@ -231,17 +231,17 @@ img.cr-image {
 }
 
 .cr-notice-title {
-  color: $fg;
+  color: $colour-f1;
 }
 
 .cr-header-link {
   text-decoration: none;
-  color: $accent;
+  color: $colour-f2;
 }
 
 .cr-a11y-icon {
   float: right;
-  color: $accent;
+  color: $colour-f2;
 }
 
 .cr-a11y-desc {
@@ -255,5 +255,5 @@ img.cr-image {
 }
 
 :focus-visible {
-  outline: $highlight dashed 5px;
+  outline: $colour-f3 dashed 5px;
 }
