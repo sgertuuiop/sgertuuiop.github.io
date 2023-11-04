@@ -119,8 +119,8 @@ const Footer = ({}) => {
         <br />
       </p>
       <p className="cr-footnote">
-        Made with <i className="ti ti-pumpkin-scary cr-accent" aria-hidden />
-        <span className="cr-a11y-desc">spookiness</span> using{" "}
+        Made with <i className="ti ti-heart-filled cr-accent" aria-hidden />
+        <span className="cr-a11y-desc">love</span> using{" "}
         <a className="cr-link-external" href="https://nextjs.org/">
           Next.js
         </a>
