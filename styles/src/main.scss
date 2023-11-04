@@ -53,8 +53,10 @@ $colour-xx: hsl(0deg 0% 25%);
 }
 
 :root {
+  color-scheme: dark;
   font-family: "Inter", sans-serif;
 }
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: "Inter var", sans-serif;

@@ -16,9 +16,10 @@ export default function Accessibility() {
       </div>
       <div className="cr-paragraph">
         <p>
-          This website is fully conformant with{" "}
-          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1
-          Level AA. More details about WCAG 2.1 can be found{" "}
+          This website is fully conformant with the Web Content Accessibility
+          Guidelines (WCAG) 2.1 Level AA. More details about{" "}
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 can
+          be found{" "}
           <a
             href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/"
             className="cr-link-external"
@@ -30,7 +31,8 @@ export default function Accessibility() {
       </div>
       <div className="cr-paragraph">
         <p>
-          In addition, this website also conforms with some criteria of WCAG 2.1
+          In addition, this website also conforms with some criteria of{" "}
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1
           Level AAA, specifically:
         </p>
         <ul>
