@@ -83,7 +83,7 @@ const Header: FC<props> = ({ title }) => {
           <b>CHRISTIAN RODRIGUEZ</b>
         </Link>{" "}
         <span aria-hidden>→&nbsp;</span>
-        {title}
+        <i>{title}</i>
       </h1>
     </header>
   );
