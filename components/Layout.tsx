@@ -71,14 +71,14 @@ const Header: FC<props> = ({ title }) => {
   return (
     <header role="banner" className="cr-header">
       <h1 className="cr-header">
-        <img
+        {/*<img
           className="cr-header-image"
           alt=""
-          width="32"
-          height="32"
+          width="64"
+          height="64"
           src="/assets/favicon.png"
         />
-        <br />
+  <br />*/}
         <Link href="/" className="cr-header-link">
           <b>CHRISTIAN RODRIGUEZ</b>
         </Link>{" "}
@@ -106,15 +106,13 @@ const Footer = ({}) => {
         </Link>
       </span>
       <p className="cr-footnote">
-        <span aria-hidden>Copyright</span> © 2023 Christian Rodríguez <br />{" "}
-        Except where otherwise noted, the content on this website is licensed
-        under{" "}
+        <span aria-hidden>Copyright</span> © 2024 Christian Rodríguez.{" "}
         <Link
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
           href="/copyright"
           rel="license"
         >
-          CC BY-ND 4.0
+          Some rights reserved.
         </Link>
         <br />
       </p>

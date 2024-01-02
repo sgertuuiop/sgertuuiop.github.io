@@ -64,10 +64,12 @@ $colour-xx: hsl(0deg 0% 25%);
 }
 
 body {
+  border-top: 2px solid $colour-f2;
   background-color: $colour-b1;
   color: $colour-f1;
   padding: 25px;
-  font-feature-settings: "ss01", "ss03", "ss04", "cv01", "cv10";
+  font-feature-settings: "ss03", "ss04", "ss07", "cv01", "cv10";
+  font-weight: 300;
 }
 
 h1,
@@ -76,7 +78,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  font-weight: 200;
+  font-style: italic;
   color: $colour-f2;
 }
 
@@ -140,7 +143,7 @@ img.cr-image {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-top: 2px solid $colour-f1;
+  border-top: 1px solid $colour-f1;
 }
 
 .cr-link-external::after {
@@ -183,19 +186,31 @@ img.cr-image {
 }
 
 .cr-button {
-  background-color: $colour-f1;
-  color: $colour-b1;
+  transition-duration: 0.3s;
+  color: $colour-f1;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-radius: 0px;
+  border: 1px solid $colour-f1;
+  border-radius: 5px;
 }
 
 .cr-button:hover {
-  background-color: $colour-f2;
+  background-color: $colour-f1;
+  color: $colour-b1;
+}
+
+.cr-button-urgent {
+  @extend .cr-button;
+  color: $colour-re;
+  border: 1px solid $colour-re;
+}
+
+.cr-button-urgent:hover {
+  background-color: $colour-re;
   color: $colour-b1;
 }
 
@@ -206,13 +221,13 @@ img.cr-image {
 .cr-header {
   color: $colour-f2;
   font-size: x-large;
-  font-weight: normal;
+  font-weight: 200;
   margin: 35px 0px 30px 0px;
 }
 
 .cr-header-image {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64px;
   margin-bottom: 16px;
 }
 
@@ -238,6 +253,7 @@ img.cr-image {
 
 .cr-header-link {
   text-decoration: none;
+  font-style: normal;
   color: $colour-f2;
 }
 

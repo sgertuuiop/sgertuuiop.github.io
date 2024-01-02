@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { Button, ExtButton } from "@/components/Buttons";
+import { Button, ExtButton, ExtButtonUrgent } from "@/components/Buttons";
 
 export default function Home() {
   return (
@@ -18,6 +18,11 @@ export default function Home() {
       />
       <br />
       <p>And here are some other miscellaneous pages:</p>
+      <ExtButtonUrgent
+        href="https://www.icrc.org/en"
+        title="Donate to the Red Cross"
+        icon="heart"
+      />
       <ExtButton
         href="https://en.pronouns.page/@sgertuuiop"
         title="Pronouns.page"
