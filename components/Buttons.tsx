@@ -37,6 +37,24 @@ const ExtButton: FC<props> = ({ href, title, rel, icon }) => {
   );
 };
 
+const ExtButtonUrgent: FC<props> = ({ href, title, rel, icon }) => {
+  return (
+    <>
+      <a
+        className="cr-button-urgent"
+        href={href}
+        rel={rel ? rel + " external" : "external"}
+      >
+        <i className={"ti ti-" + icon} /> {title}
+        <div className="cr-button-icon">
+          <i className="ti ti-external-link" />
+        </div>
+      </a>
+      <br />
+    </>
+  );
+};
+
 const HomeButton = ({}) => {
   return (
     <>
@@ -51,4 +69,4 @@ const HomeButton = ({}) => {
   );
 };
 
-export { Button, ExtButton, HomeButton };
+export { Button, ExtButton, ExtButtonUrgent, HomeButton };
