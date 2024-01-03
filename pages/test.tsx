@@ -142,6 +142,21 @@ export default function TestPage() {
         </p>
       </div>
       <div className="cr-paragraph">
+        <p className="cr-cyan">
+          Nonumy praesent sed no vel sed eum vel diam nonumy clita amet sanctus.
+          Diam ex nonumy dolor lorem labore sadipscing sit eros no takimata.
+          Dolore ex sit et stet amet eos erat ipsum stet diam erat. Ex voluptua
+          clita tempor est lorem nulla magna vel vulputate lorem diam voluptua
+          tincidunt et ipsum eirmod sed vulputate. Vero kasd sadipscing lorem at
+          id dolores eirmod diam et diam sed lorem dolore volutpat duis ex stet
+          laoreet. Diam sed diam dolores dolor elitr velit possim voluptua
+          sanctus sed et molestie voluptua sed accusam dolore facilisi aliquyam.
+          Diam mazim lorem sed imperdiet et diam nulla takimata labore tempor.
+          Vulputate vel at sit ut diam sanctus ipsum sea. Clita lorem illum at
+          ut mazim amet sed quis elitr dolore. (Cyan)
+        </p>
+      </div>
+      <div className="cr-paragraph">
         <p className="cr-blue">
           Integer sapien ipsum, tincidunt pharetra tellus non, vehicula
           consectetur mi. Vivamus non pulvinar nibh, non aliquam orci. Etiam
@@ -169,6 +184,18 @@ export default function TestPage() {
           orci, posuere eleifend metus auctor et. Aenean pharetra elit elit, non
           tempus dui posuere et. Quisque scelerisque felis turpis, cursus
           posuere neque tempus eget. (Purple)
+        </p>
+      </div>
+      <div className="cr-paragraph">
+        <p className="cr-pink">
+          Ea et at. Vel nonumy elitr sit. Ut sadipscing diam et justo vero dolor
+          justo et no. Gubergren kasd no elitr rebum invidunt at nonummy dolor
+          et. Ea dolor aliquip gubergren. Consectetuer ut takimata feugiat clita
+          et invidunt exerci lorem eirmod tempor et ut. At augue dolor
+          consetetur et est clita lobortis voluptua sit. Eu stet duo diam sea
+          sed consequat nostrud erat erat et sed ad dolor. Vero justo eirmod
+          vero lorem stet at sit amet duo justo et blandit ipsum at magna
+          gubergren. (Pink)
         </p>
       </div>
       <div className="cr-paragraph">

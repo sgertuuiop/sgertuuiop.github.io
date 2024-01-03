@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "@/components/Layout";
 import { HomeButton } from "@/components/Buttons";
 
@@ -552,6 +553,14 @@ export default function LicenceText() {
       <footer id="footer" className="cr-footer">
         <span className="cr-cc-icon">
           <i className="ti ti-creative-commons-zero" aria-hidden />{" "}
+          <Link style={{ float: "right" }} href="/a11y">
+            <i
+              className="ti ti-accessible cr-a11y-icon"
+              title="Accessibility statement"
+              aria-hidden
+            />
+            <span className="cr-a11y-desc">Accessibility statement</span>
+          </Link>
         </span>
         <p className="cr-footnote">
           The text of this Creative Commons public licence is dedicated to the
