@@ -1,57 +1,83 @@
 @import url("https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css");
 @import url("https://rsms.me/inter/inter.css");
 
-$colour-b1: hsl(0deg 0% 0%);
-$colour-b2: hsl(0deg 0% 5%);
-$colour-f1: hsl(0deg 0% 100%);
-$colour-f2: hsl(180deg 100% 80%);
-$colour-f3: hsl(135deg 100% 45%);
-$colour-no: hsl(0deg 0% 65%);
+/* Colour pallette */
 $colour-re: hsl(0deg 100% 80%);
 $colour-or: hsl(30deg 100% 80%);
 $colour-yl: hsl(60deg 100% 80%);
 $colour-gr: hsl(135deg 100% 80%);
+$colour-cy: hsl(180deg 100% 80%);
 $colour-bl: hsl(225deg 100% 80%);
 $colour-pr: hsl(270deg 100% 80%);
-$colour-xx: hsl(0deg 0% 25%);
+$colour-pk: hsl(330deg 100% 80%);
+$colour-no: hsl(0deg 0% 65%);
 
+/* UI colours */
+$colour-b1: hsl(0deg 0% 0%); // bg colour
+$colour-b2: hsl(0deg 0% 5%); // lighter bg (like text blocks)
+$colour-f1: hsl(0deg 0% 100%); // body text
+$colour-f2: $colour-cy; // accent colour
+$colour-f3: hsl(135deg 100% 45%); // a11y highlight
+$colour-xx: hsl(0deg 0% 25%); // disabled element
+
+/* Colour classes */
 .cr-background {
   color: $colour-b1;
 }
+
 .cr-background-alt {
   color: $colour-b2;
 }
+
 .cr-accent {
   color: $colour-f2;
 }
+
 .cr-highlight {
   color: $colour-f3;
 }
+
 .cr-grey {
   color: $colour-no;
 }
+
 .cr-red {
   color: $colour-re;
 }
+
 .cr-orange {
   color: $colour-or;
 }
+
 .cr-yellow {
   color: $colour-yl;
 }
+
 .cr-green {
   color: $colour-gr;
 }
+
+.cr-cyan {
+  color: $colour-cy;
+}
+
 .cr-blue {
   color: $colour-bl;
 }
+
 .cr-purple {
   color: $colour-pr;
 }
+
+.cr-pink {
+  color: $colour-pk;
+}
+
 .cr-disabled {
   color: $colour-xx;
 }
 
+/* Font */
 :root {
   color-scheme: dark;
   font-family: "Inter", sans-serif;
@@ -64,8 +90,15 @@ $colour-xx: hsl(0deg 0% 25%);
 }
 
 body {
-  border-top: 2px solid $colour-f2;
   background-color: $colour-b1;
+
+  // Regular border:
+  border-top: 2px solid $colour-f2;
+
+  // Pride border:
+  // border-image: linear-gradient(90deg,
+  //   $colour-re, $colour-or, $colour-yl, $colour-gr, $colour-bl, $colour-pr) 1 / 2px 0 0 0;
+
   color: $colour-f1;
   padding: 25px;
   font-feature-settings: "ss03", "ss04", "ss07", "cv01", "cv10";
@@ -135,9 +168,7 @@ img.cr-image {
 
 .cr-footer {
   color: $colour-f1;
-  padding: 15px;
-  padding-top: 20px;
-  padding-bottom: 1px;
+  padding: 20px 15px 1px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-decoration: none;
@@ -147,7 +178,7 @@ img.cr-image {
 }
 
 .cr-link-external::after {
-  font-family: "tabler-icons";
+  font-family: "tabler-icons", sans-serif;
   font-style: normal;
   font-weight: 400;
   content: "\2006\ea99";
@@ -161,7 +192,7 @@ img.cr-image {
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .cr-site-name {
@@ -223,7 +254,7 @@ img.cr-image {
   font-size: x-large;
   font-weight: 200;
   font-style: normal;
-  margin: 35px 0px 30px 0px;
+  margin: 35px 0 30px 0;
 }
 
 .cr-header-image {
@@ -234,11 +265,11 @@ img.cr-image {
 
 .cr-notice {
   background: repeating-linear-gradient(
-    -45deg,
-    hsl(0 65% 35%),
-    hsl(0 65% 35%) 10px,
-    hsl(0 75% 25%) 10px,
-    hsl(0 75% 25%) 20px
+      -45deg,
+      hsl(0 65% 35%),
+      hsl(0 65% 35%) 10px,
+      hsl(0 75% 25%) 10px,
+      hsl(0 75% 25%) 20px
   );
   color: #ffffff;
   padding: 15px;

@@ -22,7 +22,7 @@ const Layout: FC<props> = ({
       <Head>
         <title>{`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/favicon.png" />
+        <link rel="icon" href="/assets/favicons/regular.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta
@@ -71,14 +71,6 @@ const Header: FC<props> = ({ title }) => {
   return (
     <header role="banner" className="cr-header">
       <h1 className="cr-header">
-        {/*<img
-          className="cr-header-image"
-          alt=""
-          width="64"
-          height="64"
-          src="/assets/favicon.png"
-        />
-  <br />*/}
         <Link href="/" className="cr-header-link">
           <b>CHRISTIAN RODRIGUEZ</b>
         </Link>{" "}
@@ -106,7 +98,7 @@ const Footer = ({}) => {
         </Link>
       </span>
       <p className="cr-footnote">
-        <span aria-hidden>Copyright</span> © 2024 Christian Rodríguez.{" "}
+        <span aria-hidden>Copyright</span> © 2023-2024 Christian Rodríguez.{" "}
         <Link
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
           href="/copyright"
