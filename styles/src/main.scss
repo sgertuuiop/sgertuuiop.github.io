@@ -85,7 +85,7 @@ $colour-xx: hsl(0deg 0% 25%); // disabled element
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Inter var", sans-serif;
+    font-family: "InterVariable", sans-serif;
   }
 }
 
@@ -101,7 +101,7 @@ body {
 
   color: $colour-f1;
   padding: 25px;
-  font-feature-settings: "ss03", "ss04", "ss07", "cv01", "cv10";
+  font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
   font-weight: 300;
 }
 
@@ -111,6 +111,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "InterDisplay";
   font-weight: 200;
   font-style: italic;
   color: $colour-f2;
@@ -251,7 +252,7 @@ img.cr-image {
 
 .cr-header {
   color: $colour-f2;
-  font-size: x-large;
+  font-size: 20pt;
   font-weight: 200;
   font-style: normal;
   margin: 35px 0 30px 0;
