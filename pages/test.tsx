@@ -68,16 +68,16 @@ export default function TestPage() {
         </figure>
         <Notice title="WARNING" text="LOREM IPSUM DOLOR SIT AMET!" />
         <p>
-          Donec nec vulputate¹ mauris. Pellentesque feugiat consequat libero,
-          sit amet consequat diam venenatis vestibulum. Mauris sollicitudin
-          ipsum quis dui volutpat, ut gravida massa facilisis. Quisque
-          sollicitudin, urna sit amet condimentum² convallis, arcu mauris
-          sodales velit, dapibus condimentum massa ligula sit amet ipsum. Ut ac
-          suscipit elit. Sed laoreet quis sem in convallis. Curabitur vitae
-          ultricies nibh, commodo tempus ante. Sed lorem odio, imperdiet eget
-          massa egestas, pharetra pharetra dolor. Suspendisse ullamcorper vel
-          orci eget porttitor. Vestibulum tincidunt egestas arcu eget rutrum.
-          Donec et tempor ipsum.
+          Donec nec vulputate¹ mauris. &ldquo;Pellentesque feugiat consequat
+          libero, sit amet consequat diam venenatis vestibulum.&rdquo; Mauris
+          sollicitudin ipsum quis dui volutpat, ut gravida massa facilisis.
+          Quisque sollicitudin, urna sit amet condimentum² convallis, arcu
+          mauris sodales velit, dapibus condimentum massa ligula sit amet ipsum.
+          Ut ac suscipit elit. Sed laoreet quis sem in convallis. Curabitur
+          vitae ultricies nibh, commodo tempus ante. Sed lorem odio, imperdiet
+          eget massa egestas, pharetra pharetra dolor. Suspendisse ullamcorper
+          vel orci eget porttitor. Vestibulum tincidunt egestas arcu eget
+          rutrum. Donec et tempor ipsum.
         </p>
         <p className="cr-footnote">
           ¹ Lorem ipsum <i>dolor</i> sit amet.
