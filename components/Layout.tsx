@@ -7,7 +7,7 @@ type props = {
   description?: string;
   noheader?: boolean;
   nofooter?: boolean;
-  children?: JSX.Element[];
+  children?: React.ReactElement[];
 };
 
 const Layout: FC<props> = ({

@@ -111,7 +111,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "InterDisplay";
+  font-family: "InterDisplay", sans-serif;
   font-weight: 200;
   font-style: italic;
   color: $colour-f2;
@@ -266,11 +266,11 @@ img.cr-image {
 
 .cr-notice {
   background: repeating-linear-gradient(
-    -45deg,
-    hsl(0 65% 35%),
-    hsl(0 65% 35%) 10px,
-    hsl(0 75% 25%) 10px,
-    hsl(0 75% 25%) 20px
+      -45deg,
+      hsl(0 65% 35%),
+      hsl(0 65% 35%) 10px,
+      hsl(0 75% 25%) 10px,
+      hsl(0 75% 25%) 20px
   );
   color: #ffffff;
   padding: 15px;
