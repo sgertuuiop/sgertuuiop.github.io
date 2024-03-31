@@ -22,7 +22,7 @@ const Layout: FC<props> = ({
       <Head>
         <title>{`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/favicons/lent.png" />
+        <link rel="icon" href="/assets/favicons/easter.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta
@@ -81,7 +81,7 @@ const Header: FC<props> = ({ title }) => {
   );
 };
 
-const Footer = ({}) => {
+const Footer = () => {
   return (
     <footer role="contentinfo" id="footer" className="cr-footer">
       <span className="cr-cc-icon">

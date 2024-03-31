@@ -55,7 +55,7 @@ const ExtButtonUrgent: FC<props> = ({ href, title, rel, icon }) => {
   );
 };
 
-const HomeButton = ({}) => {
+const HomeButton = () => {
   return (
     <>
       <Link className="cr-button" href="/">
