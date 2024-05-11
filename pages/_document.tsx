@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.45.0/tabler-icons.min.css"
+          href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.3.0/tabler-icons.min.css"
         />
       </Head>
       <body>
