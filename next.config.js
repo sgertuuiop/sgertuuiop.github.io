@@ -1,25 +1,19 @@
 /** @type {import('next').NextConfig} */
 
-// prettier-ignore
-const nextConfig = {
-  output: 'export',
-};
-
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-let assetPrefix = "";
-let basePath = "";
+let ASSET_PREFIX = "";
+let BASE_PATH = "";
 
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 
-  assetPrefix = `https://${repo}/`;
-  basePath = ``;
+  ASSET_PREFIX = `https://${repo}/`;
+  BASE_PATH = ``;
 }
 
-module.exports = nextConfig;
-
-module.exports = {
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+module.exports = nextConfig = {
+  output: "export",
+  assetPrefix: ASSET_PREFIX,
+  basePath: BASE_PATH,
 };
