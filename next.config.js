@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 
+// prettier-ignore
 const nextConfig = {
-  output: "export",
+  output: 'export',
 };
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
@@ -16,8 +17,9 @@ if (isGithubActions) {
   basePath = ``;
 }
 
+module.exports = nextConfig;
+
 module.exports = {
   assetPrefix: assetPrefix,
   basePath: basePath,
-  nextConfig,
 };
