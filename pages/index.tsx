@@ -21,12 +21,12 @@ export default function Home() {
       <ExtButtonUrgent
         href="https://www.icrc.org/en"
         title="Donate to the Red Cross"
-        icon="heart"
+        icon="plus"
       />
-      <ExtButton
-        href="https://en.pronouns.page/@sgertuuiop"
-        title="Pronouns.page"
-        icon="link"
+      <ExtButtonUrgent
+        href="https://www.unrwa.org"
+        title="Donate to UNRWA"
+        icon="user"
       />
       <ExtButton
         href="https://abortionfunds.org/funds"

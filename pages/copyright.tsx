@@ -24,32 +24,44 @@ export default function Copyright() {
       <br />
 
       <div className="cr-paragraph">
-        <p>Under this licence, you are free to:</p>
+        <h2>Under this licence, you are free to:</h2>
 
-        <p>
-          <b>Share:</b> Copy and redistribute this work in any medium or format
-          for any purpose, even commercially
-        </p>
+        <ul>
+          <li>
+            <p>
+              <em>Share:</em> Copy and redistribute this work in any medium or
+              format for any purpose, even commercially
+            </p>
+          </li>
+        </ul>
       </div>
 
       <div className="cr-paragraph">
-        <p>Under the following terms:</p>
+        <h2>Under the following terms:</h2>
 
-        <p>
-          <b>Attribution:</b> You must give appropriate credit, provide a link
-          to the licence, and indicate if changes were made. You may do so in
-          any reasonable manner, but not in any way that suggests the licensor
-          endorses you or your use.
-        </p>
-        <p>
-          <b>NoDerivatives:</b> If you remix, transform, or build upon this
-          work, you may not distribute the modified work.
-        </p>
-        <p>
-          <b>No additional restrictions:</b> You may not apply legal terms or
-          technological measures that legally restrict others from doing
-          anything the licence permits.
-        </p>
+        <ul>
+          <li>
+            <p>
+              <em>Attribution:</em> You must give appropriate credit, provide a
+              link to the licence, and indicate if changes were made. You may do
+              so in any reasonable manner, but not in any way that suggests the
+              licensor endorses you or your use.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>NoDerivatives:</em> If you remix, transform, or build upon
+              this work, you may not distribute the modified work.
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>No additional restrictions:</em> You may not apply legal terms
+              or technological measures that legally restrict others from doing
+              anything the licence permits.
+            </p>
+          </li>
+        </ul>
       </div>
       <Button
         href="/licence"

@@ -16,7 +16,7 @@ $colour-no: hsl(0deg 0% 65%);
 $colour-b1: hsl(0deg 0% 0%); // bg colour
 $colour-b2: hsl(0deg 0% 5%); // lighter bg (like text blocks)
 $colour-f1: hsl(0deg 0% 100%); // body text
-$colour-f2: $colour-yl; // accent colour
+$colour-f2: $colour-cy; // accent colour
 $colour-f3: hsl(135deg 100% 45%); // a11y highlight
 $colour-xx: hsl(0deg 0% 25%); // disabled element
 
@@ -28,7 +28,6 @@ $colour-xx: hsl(0deg 0% 25%); // disabled element
 .cr-background-alt {
   color: $colour-b2;
 }
-
 .cr-accent {
   color: $colour-f2;
 }
@@ -96,8 +95,16 @@ body {
   border-top: 2px solid $colour-f2;
 
   // Pride border:
-  // border-image: linear-gradient(90deg,
-  //   $colour-re, $colour-or, $colour-yl, $colour-gr, $colour-bl, $colour-pr) 1 / 2px 0 0 0;
+  /* border-image: linear-gradient(
+      90deg,
+      $colour-re,
+      $colour-or,
+      $colour-yl,
+      $colour-gr,
+      $colour-bl,
+      $colour-pr
+    )
+    1 / 3px 0 0 0; */
 
   color: $colour-f1;
   padding: 25px;
@@ -306,5 +313,11 @@ img.cr-image {
 }
 
 :focus-visible {
-  outline: $colour-f3 dashed 5px;
+  outline: $colour-f3 solid 4px;
+  outline-offset: 5px;
+  transition-duration: 0ms;
+}
+
+ul {
+  list-style-type: "—  ";
 }
