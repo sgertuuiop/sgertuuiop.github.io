@@ -22,7 +22,7 @@ const Layout: FC<props> = ({
       <Head>
         <title>{`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/assets/favicons/regular.png" />
+        <link rel="icon" href="/assets/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta
@@ -35,7 +35,7 @@ const Layout: FC<props> = ({
         />
         <meta
           property="og:image"
-          content="https://sgertuuiop.github.io/assets/og.png"
+          content="https://sgertuuiop.github.io/assets/opengraph/spring.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sgertuuiop.github.io/" />
@@ -49,19 +49,21 @@ const Layout: FC<props> = ({
         />
         <meta
           property="twitter:image"
-          content="https://sgertuuiop.github.io/assets/og.png"
+          content="https://sgertuuiop.github.io/assets/opengraph/spring.png"
         />
       </Head>
-      <div className="cr-wrapper">
-        {noheader ? null : <Header title={title ? title : "Untitled"} />}
-        <main>
-          {children ? (
-            children
-          ) : (
-            <p className="cr-disabled">There&apos;s nothing here.</p>
-          )}
-        </main>
-        {nofooter ? null : <Footer />}
+      {noheader ? null : <Header title={title ? title : "Untitled"} />}
+      <div className="cr-body">
+        <div className="cr-wrapper">
+          <main>
+            {children ? (
+              children
+            ) : (
+              <p className="cr-disabled">There&apos;s nothing here.</p>
+            )}
+          </main>
+          {nofooter ? null : <Footer />}
+        </div>
       </div>
     </>
   );
@@ -69,15 +71,19 @@ const Layout: FC<props> = ({
 
 const Header: FC<props> = ({ title }) => {
   return (
-    <header role="banner" className="cr-header">
-      <h1 className="cr-header">
-        <Link href="/" className="cr-header-link">
-          <b>CHRISTIAN RODRIGUEZ</b>
-        </Link>{" "}
-        <span aria-hidden>→&nbsp;</span>
-        <i>{title}</i>
-      </h1>
-    </header>
+    <div className="cr-header-container">
+      <div className="cr-header-contents">
+        <header role="banner" className="cr-header">
+          <h1 className="cr-header">
+            <Link href="/" className="cr-header-link">
+              <b>CHRISTIAN RODRIGUEZ</b>
+            </Link>{" "}
+            <span aria-hidden>→&nbsp;</span>
+            <i>{title}</i>
+          </h1>
+        </header>
+      </div>
+    </div>
   );
 };
 
