@@ -13,12 +13,12 @@ $colour-pk: hsl(330deg 100% 80%);
 $colour-no: hsl(0deg 0% 65%);
 
 /* UI colours */
-$colour-b1: hsl(0deg 0% 0%); // bg colour
-$colour-b2: hsl(0deg 0% 5%); // lighter bg (like text blocks)
-$colour-f1: hsl(0deg 0% 100%); // body text
+$colour-b1: hsl(180deg 80% 5%); // bg colour
+$colour-b2: hsl(180deg 80% 10%); // lighter bg (like text blocks)
+$colour-f1: hsl(180deg 80% 95%); // body text
 $colour-f2: $colour-cy; // accent colour
-$colour-f3: hsl(135deg 100% 45%); // a11y highlight
-$colour-xx: hsl(0deg 0% 25%); // disabled element
+$colour-f3: hsl(180deg 100% 45%); // a11y highlight
+$colour-xx: hsl(180deg 80% 25%); // disabled element
 
 /* Colour classes */
 .cr-background {
@@ -90,7 +90,12 @@ $colour-xx: hsl(0deg 0% 25%); // disabled element
 
 body {
   background-color: $colour-b1;
+  color: $colour-f1;
+  font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
+  font-weight: 300;
+}
 
+.cr-body {
   // Regular border:
   border-top: 2px solid $colour-f2;
 
@@ -104,12 +109,9 @@ body {
       $colour-bl,
       $colour-pr
     )
-    1 / 3px 0 0 0; */
+    1 / 3px 0 0 0;*/
 
-  color: $colour-f1;
   padding: 25px;
-  font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
-  font-weight: 300;
 }
 
 h1,
@@ -122,6 +124,23 @@ h6 {
   font-weight: 200;
   font-style: italic;
   color: $colour-f2;
+}
+
+.cr-header-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/banners/spring.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 25px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cr-header-contents {
+  max-width: 825px;
+  width: 100%;
 }
 
 a {
@@ -234,7 +253,7 @@ img.cr-image {
   display: inline-block;
   width: 100%;
   border: 1px solid $colour-f1;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .cr-button:hover {
