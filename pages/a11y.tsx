@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import { Button, ExtButton } from "@/components/Buttons";
 
 export default function Accessibility() {
   return (
@@ -17,8 +16,8 @@ export default function Accessibility() {
       <div className="cr-paragraph">
         <p>
           This website is fully conformant with the Web Content Accessibility
-          Guidelines (WCAG) 2.1 Level AA. More details about{" "}
-          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1 can
+          Guidelines (WCAG) 2.2 Level AA. More details about{" "}
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 can
           be found{" "}
           <a
             href="https://www.w3.org/WAI/standards-guidelines/wcag/glance/"
@@ -32,47 +31,60 @@ export default function Accessibility() {
       <div className="cr-paragraph">
         <p>
           In addition, this website also conforms with some criteria of{" "}
-          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.1
+          <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2
           Level AAA, specifically:
         </p>
         <ul>
           <li>
             <p>
-              <b>Identify Purpose</b>: In content implemented using markup
+              <em>Identify Purpose:</em> In content implemented using markup
               languages, the purpose of User Interface Components, icons, and
               regions can be programmatically determined. (Criterion 1.3.6)
             </p>
           </li>
           <li>
             <p>
-              <b>Contrast (Enhanced)</b>: The visual presentation of text and
+              <em>Contrast (Enhanced):</em> The visual presentation of text and
               images of text has a contrast ratio of at least 7:1 for body text,
               and 4.5:1 for large text. (Criterion 1.4.6)
             </p>
           </li>
           <li>
             <p>
-              <b>Keyboard (No Exception)</b>: All functionality of the content
+              <em>Keyboard (No Exception):</em> All functionality of the content
               is operable through a keyboard interface without requiring
               specific timings for individual keystrokes. (Criterion 2.1.3)
             </p>
           </li>
           <li>
             <p>
-              <b>Three Flashes</b>: Web pages do not contain anything that
+              <em>Three Flashes:</em> Web pages do not contain anything that
               flashes more than three times in any one second period. (Criterion
               2.3.2)
             </p>
           </li>
           <li>
             <p>
-              <b>Location</b>: Information about the user&apos;s location within
-              a set of Web pages is available. (Criterion 2.4.8)
+              <em>Location:</em> Information about the user&apos;s location
+              within a set of Web pages is available. (Criterion 2.4.8)
             </p>
           </li>
           <li>
             <p>
-              <b>Abbreviations</b>: A mechanism for identifying the expanded
+              <em>Focus Not Obscured (Enhanced):</em> When a user interface
+              component receives keyboard focus, no part of the component is
+              hidden by author-created content. (Criterion 2.4.12)
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Focus Appearance:</em> When the keyboard focus indicator is
+              visible, it is of sufficient size and contrast. (Criterion 2.4.13)
+            </p>
+          </li>
+          <li>
+            <p>
+              <em>Abbreviations:</em> A mechanism for identifying the expanded
               form or meaning of abbreviations is available. (Criterion 3.1.4)
             </p>
           </li>
