@@ -97,10 +97,10 @@ body {
 
 .cr-body {
   // Regular border:
-  border-top: 2px solid $colour-f2;
+  // border-top: 2px solid $colour-f2;
 
   // Pride border:
-  /* border-image: linear-gradient(
+  border-image: linear-gradient(
       90deg,
       $colour-re,
       $colour-or,
@@ -109,7 +109,7 @@ body {
       $colour-bl,
       $colour-pr
     )
-    1 / 3px 0 0 0;*/
+    1 / 3px 0 0 0;
 
   padding: 25px;
 }
@@ -128,7 +128,7 @@ h6 {
 
 .cr-header-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/banners/spring.png");
+    url("/assets/banners/summer.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 25px;
