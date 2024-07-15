@@ -2,23 +2,23 @@
 @import url("https://rsms.me/inter/inter.css");
 
 /* Colour pallette */
-$colour-re: hsl(0deg 100% 80%);
-$colour-or: hsl(30deg 100% 80%);
-$colour-yl: hsl(60deg 100% 80%);
-$colour-gr: hsl(135deg 100% 80%);
-$colour-cy: hsl(180deg 100% 80%);
-$colour-bl: hsl(225deg 100% 80%);
-$colour-pr: hsl(270deg 100% 80%);
-$colour-pk: hsl(330deg 100% 80%);
-$colour-no: hsl(0deg 0% 65%);
+$colour-re: hsl(0, 100%, 80%);
+$colour-or: hsl(30, 100%, 80%);
+$colour-yl: hsl(60, 100%, 80%);
+$colour-gr: hsl(135, 100%, 80%);
+$colour-cy: hsl(180, 100%, 80%);
+$colour-bl: hsl(225, 100%, 80%);
+$colour-pr: hsl(270, 100%, 80%);
+$colour-pk: hsl(330, 100%, 80%);
+$colour-no: hsl(0, 0%, 65%);
 
 /* UI colours */
-$colour-b1: hsl(180deg 80% 5%); // bg colour
-$colour-b2: hsl(180deg 80% 10%); // lighter bg (like text blocks)
-$colour-f1: hsl(180deg 80% 95%); // body text
+$colour-b1: hsl(180, 77%, 5%); // bg colour
+$colour-b2: hsl(180, 80%, 10%); // lighter bg (like text blocks)
+$colour-f1: hsl(180, 77%, 95%); // body text
 $colour-f2: $colour-cy; // accent colour
-$colour-f3: hsl(180deg 100% 45%); // a11y highlight
-$colour-xx: hsl(180deg 80% 25%); // disabled element
+$colour-f3: hsl(180, 100%, 45%); // a11y highlight
+$colour-xx: hsl(180, 80%, 25%); // disabled element
 
 /* Colour classes */
 .cr-background {
@@ -293,10 +293,10 @@ img.cr-image {
 .cr-notice {
   background: repeating-linear-gradient(
     -45deg,
-    hsl(0 65% 35%),
-    hsl(0 65% 35%) 10px,
-    hsl(0 75% 25%) 10px,
-    hsl(0 75% 25%) 20px
+    hsl(0, 65%, 35%),
+    hsl(0, 65%, 35%) 10px,
+    hsl(0, 75%, 25%) 10px,
+    hsl(0, 75%, 25%) 20px
   );
   color: #ffffff;
   padding: 15px;
