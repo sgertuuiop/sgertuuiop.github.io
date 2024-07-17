@@ -2,78 +2,78 @@
 @import url("https://rsms.me/inter/inter.css");
 
 /* Colour pallette */
-$colour-re: hsl(0, 100%, 80%);
-$colour-or: hsl(30, 100%, 80%);
-$colour-yl: hsl(60, 100%, 80%);
-$colour-gr: hsl(135, 100%, 80%);
-$colour-cy: hsl(180, 100%, 80%);
-$colour-bl: hsl(225, 100%, 80%);
-$colour-pr: hsl(270, 100%, 80%);
-$colour-pk: hsl(330, 100%, 80%);
-$colour-no: hsl(0, 0%, 65%);
+$colour-red: hsl(343, 81%, 75%);
+$colour-orange: hsl(23, 92%, 75%);
+$colour-yellow: hsl(41, 86%, 83%);
+$colour-green: hsl(115, 54%, 76%);
+$colour-cyan: hsl(170, 57%, 73%);
+$colour-blue: hsl(217, 92%, 76%);
+$colour-purple: hsl(267, 84%, 81%);
+$colour-pink: hsl(316, 72%, 86%);
+$colour-grey: hsl(0, 0%, 65%);
 
 /* UI colours */
-$colour-b1: hsl(180, 77%, 5%); // bg colour
-$colour-b2: hsl(180, 80%, 10%); // lighter bg (like text blocks)
-$colour-f1: hsl(180, 77%, 95%); // body text
-$colour-f2: $colour-cy; // accent colour
-$colour-f3: hsl(180, 100%, 45%); // a11y highlight
-$colour-xx: hsl(180, 80%, 25%); // disabled element
+$colour-bg-1: hsl(170, 21%, 5%); // bg colour
+$colour-bg-2: hsl(170, 16%, 23%); // lighter bg (like text blocks)
+$colour-fg-1: hsl(170, 64%, 88%); // fg text colour
+$colour-fg-2: $colour-cyan; // accent colour
+$colour-a11y: hsl(170, 100%, 45%); // a11y highlight
+$colour-fg-disabled: hsl(170, 80%, 25%); // disabled element
 
 /* Colour classes */
 .cr-background {
-  color: $colour-b1;
+  color: $colour-bg-1;
 }
 
 .cr-background-alt {
-  color: $colour-b2;
+  color: $colour-bg-2;
 }
 .cr-accent {
-  color: $colour-f2;
+  color: $colour-fg-2;
 }
 
 .cr-highlight {
-  color: $colour-f3;
+  color: $colour-a11y;
 }
 
 .cr-grey {
-  color: $colour-no;
+  color: $colour-grey;
 }
 
 .cr-red {
-  color: $colour-re;
+  color: $colour-red;
 }
 
 .cr-orange {
-  color: $colour-or;
+  color: $colour-orange;
 }
 
 .cr-yellow {
-  color: $colour-yl;
+  color: $colour-yellow;
 }
 
 .cr-green {
-  color: $colour-gr;
+  color: $colour-green;
 }
 
 .cr-cyan {
-  color: $colour-cy;
+  color: $colour-cyan;
 }
 
 .cr-blue {
-  color: $colour-bl;
+  color: $colour-blue;
 }
 
 .cr-purple {
-  color: $colour-pr;
+  color: $colour-purple;
 }
 
 .cr-pink {
-  color: $colour-pk;
+  color: $colour-pink;
 }
 
 .cr-disabled {
-  color: $colour-xx;
+  color: $colour-fg-disabled;
 }
 
 /* Font */
@@ -89,8 +89,8 @@ $colour-xx: hsl(180, 80%, 25%); // disabled element
 }
 
 body {
-  background-color: $colour-b1;
-  color: $colour-f1;
+  background-color: $colour-bg-1;
+  color: $colour-fg-1;
   font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
   font-weight: 300;
 }
@@ -102,12 +102,12 @@ body {
   // Pride border:
   border-image: linear-gradient(
       90deg,
-      $colour-re,
-      $colour-or,
-      $colour-yl,
-      $colour-gr,
-      $colour-bl,
-      $colour-pr
+      $colour-red,
+      $colour-orange,
+      $colour-yellow,
+      $colour-green,
+      $colour-blue,
+      $colour-purple
     )
     1 / 3px 0 0 0;
 
@@ -123,7 +123,7 @@ h6 {
   font-family: "InterDisplay", sans-serif;
   font-weight: 200;
   font-style: italic;
-  color: $colour-f2;
+  color: $colour-fg-2;
 }
 
 .cr-header-container {
@@ -144,11 +144,11 @@ h6 {
 }
 
 a {
-  color: $colour-f1;
+  color: $colour-fg-1;
 }
 
 a:hover {
-  color: $colour-f2;
+  color: $colour-fg-2;
 }
 
 abbr:hover {
@@ -156,7 +156,7 @@ abbr:hover {
 }
 
 hr {
-  border: 1px solid $colour-f1;
+  border: 1px solid $colour-fg-1;
 }
 
 figure {
@@ -194,14 +194,14 @@ img.cr-image {
 }
 
 .cr-footer {
-  color: $colour-f1;
+  color: $colour-fg-1;
   padding: 20px 15px 1px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-top: 1px solid $colour-f1;
+  border-top: 1px solid $colour-fg-1;
 }
 
 .cr-link-external::after {
@@ -212,7 +212,7 @@ img.cr-image {
 }
 
 .cr-block {
-  background-color: $colour-b2;
+  background-color: $colour-bg-2;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -237,7 +237,7 @@ img.cr-image {
 }
 
 .cr-paragraph {
-  color: $colour-f1;
+  color: $colour-fg-1;
   margin-bottom: 4px;
   display: inline-block;
   width: 100%;
@@ -245,31 +245,31 @@ img.cr-image {
 
 .cr-button {
   transition-duration: 0.3s;
-  color: $colour-f1;
+  color: $colour-fg-1;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border: 1px solid $colour-f1;
+  border: 1px solid $colour-fg-1;
   border-radius: 15px;
 }
 
 .cr-button:hover {
-  background-color: $colour-f1;
-  color: $colour-b1;
+  background-color: $colour-fg-1;
+  color: $colour-bg-1;
 }
 
 .cr-button-urgent {
   @extend .cr-button;
-  color: $colour-re;
-  border: 1px solid $colour-re;
+  color: $colour-red;
+  border: 1px solid $colour-red;
 }
 
 .cr-button-urgent:hover {
-  background-color: $colour-re;
-  color: $colour-b1;
+  background-color: $colour-red;
+  color: $colour-bg-1;
 }
 
 .cr-button-icon {
@@ -277,7 +277,7 @@ img.cr-image {
 }
 
 .cr-header {
-  color: $colour-f2;
+  color: $colour-fg-2;
   font-size: 20pt;
   font-weight: 200;
   font-style: normal;
@@ -293,10 +293,10 @@ img.cr-image {
 .cr-notice {
   background: repeating-linear-gradient(
     -45deg,
-    hsl(0, 65%, 35%),
-    hsl(0, 65%, 35%) 10px,
-    hsl(0, 75%, 25%) 10px,
-    hsl(0, 75%, 25%) 20px
+    hsl(343, 65%, 35%),
+    hsl(343, 65%, 35%) 10px,
+    hsl(343, 75%, 25%) 10px,
+    hsl(343, 75%, 25%) 20px
   );
   color: #ffffff;
   padding: 15px;
@@ -307,18 +307,18 @@ img.cr-image {
 }
 
 .cr-notice-title {
-  color: $colour-f1;
+  color: $colour-fg-1;
 }
 
 .cr-header-link {
   text-decoration: none;
   font-style: normal;
-  color: $colour-f2;
+  color: $colour-fg-2;
 }
 
 .cr-a11y-icon {
   float: right;
-  color: $colour-f2;
+  color: $colour-fg-2;
 }
 
 .cr-a11y-desc {
@@ -332,7 +332,7 @@ img.cr-image {
 }
 
 :focus-visible {
-  outline: $colour-f3 solid 4px;
+  outline: $colour-a11y solid 4px;
   outline-offset: 5px;
   transition-duration: 0ms;
 }
