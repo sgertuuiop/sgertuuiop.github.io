@@ -35,7 +35,7 @@ const Layout: FC<props> = ({
         />
         <meta
           property="og:image"
-          content="https://sgertuuiop.github.io/assets/opengraph/spring.png"
+          content="https://sgertuuiop.github.io/assets/opengraph/fall.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sgertuuiop.github.io/" />
@@ -49,7 +49,7 @@ const Layout: FC<props> = ({
         />
         <meta
           property="twitter:image"
-          content="https://sgertuuiop.github.io/assets/opengraph/spring.png"
+          content="https://sgertuuiop.github.io/assets/opengraph/fall.png"
         />
       </Head>
       {noheader ? null : <Header title={title ? title : "Untitled"} />}
