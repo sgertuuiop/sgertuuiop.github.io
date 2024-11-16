@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import { HomeButton } from "@/components/Buttons";
+import React from "react";
 
 export default function LicenceText() {
   return (
     <Layout
       title="Licence legal text"
       description="Terms for re-use of content hosted on this website."
+      path=""
+      filename="LICENCE"
       noheader
       nofooter
     >
@@ -550,18 +553,12 @@ export default function LicenceText() {
         </ol>
       </div>
       <HomeButton />
-      <footer id="footer" className="cr-footer">
-        <span className="cr-cc-icon">
-          <i className="ti ti-creative-commons-zero" aria-hidden />{" "}
-          <Link style={{ float: "right" }} href="/a11y">
-            <i
-              className="ti ti-accessible cr-a11y-icon"
-              title="Accessibility statement"
-              aria-hidden
-            />
-            <span className="cr-a11y-desc">Accessibility statement</span>
-          </Link>
-        </span>
+      <footer role="contentinfo" id="footer" className="cr-footer">
+        <div className="cr-horizontal-rule">***</div>
+        <p className="cr-footnote">
+          Public Domain (CC0) •{" "}
+          <Link href="/a11y">Accessibility statement</Link>{" "}
+        </p>
         <p className="cr-footnote">
           The text of this Creative Commons public licence is dedicated to the
           public domain under the{" "}
@@ -570,6 +567,17 @@ export default function LicenceText() {
             href="https://creativecommons.org/publicdomain/zero/1.0/"
           >
             CC0 Public Domain Dedication
+          </a>
+          <br />
+        </p>
+        <p className="cr-footnote">
+          Made with{" "}
+          <span className="cr-accent" aria-hidden>
+            &lt;3
+          </span>
+          <span className="cr-a11y-desc">love</span> using{" "}
+          <a className="cr-link-external" href="https://nextjs.org/">
+            Next.js
           </a>
         </p>
       </footer>

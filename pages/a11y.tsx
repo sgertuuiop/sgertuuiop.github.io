@@ -4,6 +4,8 @@ export default function Accessibility() {
   return (
     <Layout
       title="Accessibility statement"
+      path=""
+      filename="a11y"
       description="Information about conformance to accessibility standards."
     >
       <div className="cr-paragraph">

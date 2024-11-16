@@ -4,6 +4,9 @@ import Link from "next/link";
 
 type props = {
   title: string;
+  path: string;
+  filename: string;
+  code?: string;
   description?: string;
   noheader?: boolean;
   nofooter?: boolean;
@@ -12,6 +15,8 @@ type props = {
 
 const Layout: FC<props> = ({
   title,
+  path,
+  filename,
   description,
   noheader,
   nofooter,
@@ -20,14 +25,14 @@ const Layout: FC<props> = ({
   return (
     <>
       <Head>
-        <title>{`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}</title>
+        <title>{`/home/sgertuuiop${path ? path : ""}/${filename}.md`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta
           property="og:title"
-          content={`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}
+          content={`/home/sgertuuiop${path ? path : ""}/${filename}.md`}
         />
         <meta
           property="og:description"
@@ -35,13 +40,13 @@ const Layout: FC<props> = ({
         />
         <meta
           property="og:image"
-          content="https://sgertuuiop.github.io/assets/opengraph/fall.png"
+          content="https://sgertuuiop.github.io/assets/og.png"
         />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://sgertuuiop.github.io/" />
         <meta
           property="twitter:title"
-          content={`${title ? title : "Untitled"} « CHRISTIAN RODRIGUEZ`}
+          content={`/home/sgertuuiop${path ? path : ""}/${filename}.md`}
         />
         <meta
           property="twitter:description"
@@ -49,13 +54,20 @@ const Layout: FC<props> = ({
         />
         <meta
           property="twitter:image"
-          content="https://sgertuuiop.github.io/assets/opengraph/fall.png"
+          content="https://sgertuuiop.github.io/assets/og.png"
         />
+        <meta name="fediverse:creator" content="@sgertuuiop@tech.lgbt" />
       </Head>
-      {noheader ? null : <Header title={title ? title : "Untitled"} />}
       <div className="cr-body">
         <div className="cr-wrapper">
           <main>
+            {noheader ? null : (
+              <Header
+                title={title ? title : "Untitled"}
+                path={path}
+                filename={filename}
+              />
+            )}
             {children ? (
               children
             ) : (
@@ -69,42 +81,46 @@ const Layout: FC<props> = ({
   );
 };
 
-const Header: FC<props> = ({ title }) => {
+const Header: FC<props> = ({ title, path, filename }) => {
   return (
-    <div className="cr-header-container">
-      <div className="cr-header-contents">
-        <header role="banner" className="cr-header">
-          <h1 className="cr-header">
-            <Link href="/" className="cr-header-link">
-              <b>CHRISTIAN RODRIGUEZ</b>
-            </Link>{" "}
-            <span aria-hidden>→&nbsp;</span>
-            <i>{title}</i>
-          </h1>
-        </header>
-      </div>
-    </div>
+    <header role="banner" className="cr-header">
+      <span className="cr-header">
+        <Link href="/" className="cr-header-link">
+          <b>sgertuuiop</b>
+        </Link>{" "}
+        [ <span className="cr-foreground">~{path}</span> ]%{" "}
+        <span className="cr-foreground">cat &quot;{filename}.md&quot;</span>
+        <br />
+        {filename != "index" ? <h1>{title}</h1> : ""}
+      </span>
+    </header>
+  );
+};
+
+const ErrorHeader: FC<props> = ({ title, path, filename, code }) => {
+  return (
+    <header role="banner" className="cr-header">
+      <span className="cr-header">
+        <span className="cr-red">{code}</span>{" "}
+        <Link href="/" className="cr-header-link cr-red">
+          <b>sgertuuiop</b>
+        </Link>{" "}
+        [ <span className="cr-foreground">~</span> ] %
+      </span>
+    </header>
   );
 };
 
 const Footer = () => {
   return (
     <footer role="contentinfo" id="footer" className="cr-footer">
-      <span className="cr-cc-icon">
-        <i className="ti ti-creative-commons" aria-hidden />{" "}
-        <i className="ti ti-creative-commons-by" aria-hidden />{" "}
-        <i className="ti ti-creative-commons-nd" aria-hidden />{" "}
-        <Link style={{ float: "right" }} href="/a11y">
-          <i
-            className="ti ti-accessible cr-a11y-icon"
-            title="Accessibility statement"
-            aria-hidden
-          />
-          <span className="cr-a11y-desc">Accessibility statement</span>
-        </Link>
-      </span>
+      <div className="cr-horizontal-rule"> *** </div>
       <p className="cr-footnote">
-        <span aria-hidden>Copyright</span> © 2023-2024 Christian Rodríguez.{" "}
+        CC BY-ND • <Link href="/a11y">Accessibility statement</Link>{" "}
+      </p>
+      <p className="cr-footnote">
+        Copyright <span aria-hidden>(C)</span> 2023-2024 Christian
+        Rodríguez-Burns.{" "}
         <Link
           title="Creative Commons Attribution-NoDerivatives 4.0 International"
           href="/copyright"
@@ -115,10 +131,20 @@ const Footer = () => {
         <br />
       </p>
       <p className="cr-footnote">
-        Made with <i className="ti ti-heart-filled cr-accent" aria-hidden />
+        Made with{" "}
+        <span className="cr-accent" aria-hidden>
+          &lt;3
+        </span>
         <span className="cr-a11y-desc">love</span> using{" "}
         <a className="cr-link-external" href="https://nextjs.org/">
           Next.js
+        </a>{" "}
+        •{" "}
+        <a
+          className="cr-link-external"
+          href="https://github.com/sgertuuiop/sgertuuiop.github.io"
+        >
+          Source code
         </a>
       </p>
     </footer>
@@ -126,4 +152,4 @@ const Footer = () => {
 };
 
 export default Layout;
-export { Header, Footer };
+export { Header, ErrorHeader, Footer };

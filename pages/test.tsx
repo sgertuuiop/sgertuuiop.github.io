@@ -4,7 +4,12 @@ import Notice from "@/components/Notice";
 
 export default function TestPage() {
   return (
-    <Layout title="Kitchen sink" description="This is the kitchen sink!!!">
+    <Layout
+      title="Kitchen sink"
+      path="/test-dir/other-test-dir"
+      filename="test"
+      description="This is the kitchen sink!!!"
+    >
       <div className="cr-paragraph">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet

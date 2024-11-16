@@ -1,43 +1,33 @@
 import Layout from "@/components/Layout";
-import { Button, ExtButton, ExtButtonUrgent } from "@/components/Buttons";
+import { Button, ExtButton } from "@/components/Buttons";
 
 export default function Home() {
   return (
-    <Layout title="Home" description="This is my personal website!">
-      <p>Welcome to my website! Here is where I am on the Internet:</p>
+    <Layout
+      title="Home"
+      path=""
+      filename="index"
+      description="This is my personal website!"
+    >
+      <h1>Hello! My name is Christian!</h1>
+      <p>
+        I am a Canadian high school student interested in software engineering.
+      </p>
+      <p>Here are some other places I exist on the Internet:</p>
       <ExtButton
         href="https://sgertuuiop.tumblr.com"
         title="Tumblr"
         icon="brand-tumblr"
       />
       <ExtButton
-        href="https://mstdn.social/@sgertuuiop"
-        title="Mastodon (mstdn.social)"
+        href="https://tech.lgbt/@sgertuuiop"
+        title="Mastodon (tech.lgbt)"
         rel="me"
         icon="brand-mastodon"
       />
       <br />
-      <p>And here are some other miscellaneous pages:</p>
-      <ExtButtonUrgent
-        href="https://www.icrc.org/en"
-        title="Donate to the Red Cross"
-        icon="plus"
-      />
-      <ExtButtonUrgent
-        href="https://www.unrwa.org"
-        title="Donate to UNRWA"
-        icon="user"
-      />
-      <ExtButton
-        href="https://abortionfunds.org/funds"
-        title="Donate to an abortion fund"
-        icon="first-aid-kit"
-      />
-      <Button
-        href="/copyright"
-        title="Copyright information"
-        icon="copyright"
-      />
+      <p>And here are some things I&apos;ve worked on in my time on Earth:</p>
+      <Button href="/projects/stranded" title="STRANDED" icon="alien" />
     </Layout>
   );
 }
