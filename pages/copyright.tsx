@@ -5,6 +5,8 @@ export default function Copyright() {
   return (
     <Layout
       title="Copyright information"
+      path=""
+      filename="copyright"
       description="Terms for re-use of content hosted on this website."
     >
       <div className="cr-paragraph">
@@ -13,7 +15,7 @@ export default function Copyright() {
           the{" "}
           <a
             className="cr-link-external"
-            href="http://creativecommons.org/licenses/by-nd/4.0/"
+            href="https://creativecommons.org/licenses/by-nd/4.0/"
           >
             Creative Commons Attribution-NoDerivatives 4.0 International
           </a>{" "}

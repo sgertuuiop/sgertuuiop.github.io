@@ -1,7 +1,8 @@
 @import url("https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 
-/* Colour pallette */
+// Colour palette
 $colour-red: hsl(343, 81%, 75%);
 $colour-orange: hsl(23, 92%, 75%);
 $colour-yellow: hsl(41, 86%, 83%);
@@ -12,13 +13,14 @@ $colour-purple: hsl(267, 84%, 81%);
 $colour-pink: hsl(316, 72%, 86%);
 $colour-grey: hsl(0, 0%, 65%);
 
-/* UI colours */
+// UI colours
 $colour-bg-1: hsl(170, 21%, 5%); // bg colour
+//$colour-bg-1: #000000;
 $colour-bg-2: hsl(170, 16%, 23%); // lighter bg (like text blocks)
-$colour-fg-1: hsl(170, 64%, 88%); // fg text colour
+$colour-fg-1: hsl(170, 64%, 95%); // fg text colour
 $colour-fg-2: $colour-cyan; // accent colour
 $colour-a11y: hsl(170, 100%, 45%); // a11y highlight
-$colour-fg-disabled: hsl(170, 80%, 25%); // disabled element
+$colour-fg-disabled: hsl(170, 80%, 25%); // disabled element */
 
 /* Colour classes */
 .cr-background {
@@ -28,6 +30,11 @@ $colour-fg-disabled: hsl(170, 80%, 25%); // disabled element
 .cr-background-alt {
   color: $colour-bg-2;
 }
+
+.cr-foreground {
+  color: $colour-fg-1;
+}
+
 .cr-accent {
   color: $colour-fg-2;
 }
@@ -79,19 +86,13 @@ $colour-fg-disabled: hsl(170, 80%, 25%); // disabled element
 /* Font */
 :root {
   color-scheme: dark;
-  font-family: "Inter", sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-  :root {
-    font-family: "InterVariable", sans-serif;
-  }
+  font-family: "Spline Sans Mono", monospace;
 }
 
 body {
   background-color: $colour-bg-1;
   color: $colour-fg-1;
-  font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
+  // font-feature-settings: "ss04", "ss07", "ss08", "cv01", "cv10";
   font-weight: 300;
 }
 
@@ -120,27 +121,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "InterDisplay", sans-serif;
-  font-weight: 200;
-  font-style: italic;
   color: $colour-fg-2;
+  font-size: inherit;
 }
 
-.cr-header-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/banners/fall.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0 25px;
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h1::before {
+  content: "# ";
 }
 
-.cr-header-contents {
-  max-width: 825px;
-  width: 100%;
+h2::before {
+  content: "## ";
+}
+
+h3::before {
+  content: "### ";
 }
 
 a {
@@ -156,7 +150,11 @@ abbr:hover {
 }
 
 hr {
-  border: 1px solid $colour-fg-1;
+  //border: 1px solid $colour-fg-1;
+  color: $colour-fg-1;
+  border: none;
+  content: "---";
+  text-align: center;
 }
 
 figure {
@@ -195,13 +193,18 @@ img.cr-image {
 
 .cr-footer {
   color: $colour-fg-1;
-  padding: 20px 15px 1px;
+  //padding: 20px 0 1px;
   margin-top: 30px;
   margin-bottom: 20px;
   text-decoration: none;
   display: inline-block;
   width: 100%;
-  border-top: 1px solid $colour-fg-1;
+  //border-top: 1px solid $colour-fg-1;
+}
+
+.cr-horizontal-rule {
+  width: 100%;
+  text-align: center;
 }
 
 .cr-link-external::after {
@@ -244,7 +247,7 @@ img.cr-image {
 }
 
 .cr-button {
-  transition-duration: 0.3s;
+  // transition-duration: 0.3s;
   color: $colour-fg-1;
   padding: 15px;
   margin-top: 20px;
@@ -253,23 +256,24 @@ img.cr-image {
   display: inline-block;
   width: 100%;
   border: 1px solid $colour-fg-1;
-  border-radius: 15px;
+  //border-radius: 15px;
 }
 
 .cr-button:hover {
   background-color: $colour-fg-1;
   color: $colour-bg-1;
+  //border: 1px solid $colour-fg-2;
 }
 
 .cr-button-urgent {
   @extend .cr-button;
   color: $colour-red;
-  border: 1px solid $colour-red;
+  border-bottom: 1px solid $colour-red;
 }
 
 .cr-button-urgent:hover {
-  background-color: $colour-red;
-  color: $colour-bg-1;
+  color: $colour-fg-2;
+  border-bottom: 1px solid $colour-fg-2;
 }
 
 .cr-button-icon {
@@ -278,8 +282,7 @@ img.cr-image {
 
 .cr-header {
   color: $colour-fg-2;
-  font-size: 20pt;
-  font-weight: 200;
+  font-size: inherit;
   font-style: normal;
   margin: 35px 0 30px 0;
 }
@@ -338,5 +341,16 @@ img.cr-image {
 }
 
 ul {
-  list-style-type: "—  ";
+  list-style-type: "*  ";
+}
+
+.cr-code {
+  border-left: 1px solid $colour-fg-2;
+  background-color: $colour-bg-2;
+  font-family: "Spline Sans Mono", monospace;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
