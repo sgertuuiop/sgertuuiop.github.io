@@ -55,26 +55,30 @@ export default function Stranded() {
           Manual for STRANDED [Christian Rodríguez-Burns/CC BY-SA 4.0]
         </figcaption>
       </figure>
-      {/* prettier-ignore */}
-      <pre>
-        <code className="cr-code">
-STRANDED: FIND YOUR WAY BACK HOME.<br />
-Copyright (C) 2023-2024 Christian Rodriguez-Burns.<br /> <br />
-
-This program is free software: you can redistribute it and/or modify<br />
-it under the terms of the GNU General Public License as published by<br />
-the Free Software Foundation, either version 3 of the License, or<br />
-(at your option) any later version.<br /> <br />
-
-This program is distributed in the hope that it will be useful,<br />
-but WITHOUT ANY WARRANTY; without even the implied warranty of<br />
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<br />
-GNU General Public License for more details.<br /> <br />
-
-You should have received a copy of the GNU General Public License<br />
-along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.
-        </code>
-      </pre>
+      <div className="cr-blockquote">
+        <p>STRANDED: FIND YOUR WAY BACK HOME.</p>
+        <p>Copyright (C) 2023-2024 Christian Rodriguez-Burns.</p>
+        <p>
+          This program is free software: you can redistribute it and/or modify
+          it under the terms of the GNU General Public License as published by
+          the Free Software Foundation, either version 3 of the License, or (at
+          your option) any later version.
+        </p>
+        <p>
+          This program is distributed in the hope that it will be useful, but
+          WITHOUT ANY WARRANTY; without even the implied warranty of
+          MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+          General Public License for more details.
+        </p>
+        <p>
+          You should have received a copy of the GNU General Public License
+          along with this program. If not, see{" "}
+          <a className="cr-link-external" href="https://www.gnu.org/licenses/">
+            https://www.gnu.org/licenses/
+          </a>
+          .
+        </p>
+      </div>
       <ExtButton
         href="https://sgertuuiop.github.io/stranded-rewritten"
         title="Play now"

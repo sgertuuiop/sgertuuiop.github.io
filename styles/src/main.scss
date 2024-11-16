@@ -353,4 +353,15 @@ ul {
   margin-bottom: 20px;
   display: inline-block;
   width: 100%;
+  white-space: pre-wrap;
+}
+
+.cr-blockquote {
+  border-left: 1px solid $colour-fg-2;
+  background-color: $colour-bg-2;
+  padding: 0 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
