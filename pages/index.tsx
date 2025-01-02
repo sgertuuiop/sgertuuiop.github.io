@@ -11,7 +11,8 @@ export default function Home() {
     >
       <h1>Hello! My name is Christian!</h1>
       <p>
-        I am a Canadian high school student interested in software engineering.
+        I&apos;m a Canadian high school student interested in software
+        engineering.
       </p>
       <p>Here are some other places I exist on the Internet:</p>
       <ExtButton
@@ -24,6 +25,11 @@ export default function Home() {
         title="Mastodon (tech.lgbt)"
         rel="me"
         icon="brand-mastodon"
+      />
+      <ExtButton
+        href="https://bsky.app/profile/sgertuuiop.bsky.social"
+        title="Bluesky"
+        icon="brand-bluesky"
       />
       <br />
       <p>And here are some things I&apos;ve worked on in my time on Earth:</p>
