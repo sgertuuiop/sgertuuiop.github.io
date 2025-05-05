@@ -80,7 +80,7 @@ export default function Stranded() {
         </p>
       </div>
       <ExtButton
-        href="https://sgertuuiop.github.io/stranded-rewritten"
+        href="https://sgertuuiop.github.io/stranded"
         title="Play now"
         icon="device-gamepad"
       />
