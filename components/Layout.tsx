@@ -3,9 +3,9 @@ import Head from "next/head";
 import Link from "next/link";
 
 type props = {
-  title: string;
-  path: string;
-  filename: string;
+  title?: string;
+  path?: string;
+  filename?: string;
   code?: string;
   description?: string;
   noheader?: boolean;
@@ -25,14 +25,18 @@ const Layout: FC<props> = ({
   return (
     <>
       <Head>
-        <title>{`/home/sgertuuiop${path ? path : ""}/${filename}.md`}</title>
+        <title>{`/home/sgertuuiop${path ? path : ""}/${
+          filename ? filename : "untitled"
+        }.md`}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sgertuuiop.github.io/" />
         <meta
           property="og:title"
-          content={`/home/sgertuuiop${path ? path : ""}/${filename}.md`}
+          content={`/home/sgertuuiop${path ? path : ""}/${
+            filename ? filename : "untitled"
+          }.md`}
         />
         <meta
           property="og:description"
@@ -46,7 +50,9 @@ const Layout: FC<props> = ({
         <meta property="twitter:url" content="https://sgertuuiop.github.io/" />
         <meta
           property="twitter:title"
-          content={`/home/sgertuuiop${path ? path : ""}/${filename}.md`}
+          content={`/home/sgertuuiop${path ? path : ""}/${
+            filename ? filename : "untitled"
+          }.md`}
         />
         <meta
           property="twitter:description"
@@ -65,7 +71,7 @@ const Layout: FC<props> = ({
               <Header
                 title={title ? title : "Untitled"}
                 path={path}
-                filename={filename}
+                filename={filename ? filename : "untitled"}
               />
             )}
             {children ? (
@@ -89,7 +95,9 @@ const Header: FC<props> = ({ title, path, filename }) => {
           <b>sgertuuiop</b>
         </Link>{" "}
         [ <span className="cr-foreground">~{path}</span> ]%{" "}
-        <span className="cr-foreground">cat &quot;{filename}.md&quot;</span>
+        <span className="cr-foreground">
+          cat &quot;{filename ? filename : "untitled"}.md&quot;
+        </span>
         <br />
         {filename != "index" ? <h1>{title}</h1> : ""}
       </span>
